@@ -1087,6 +1087,9 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  background-image: url("../picture/sea2.jpg");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
 }
 input,
 button,
@@ -1608,6 +1611,14 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  align-content: center;
+}
+.container-fluid-nav {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 35%;
+  margin-left: 35%;
+}
 }
 .row {
   margin-right: -15px;
@@ -3979,6 +3990,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   list-style: none;
 }
+.nav > div{
+position:center;
+}
 .nav > li {
   position: relative;
   display: block;
@@ -4504,25 +4518,35 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  background-picture: #5e5e5e;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: black;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: transparent;
+  background-color: #45D7EC;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: #45D7EC 0px 0px 7px 0px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: #45D7EC;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: #45D7EC 0px 0px 7px 0px;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4963,7 +4987,6 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4999,6 +5022,17 @@ a.badge:focus {
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 63px;
+  }
+  .container-div{
+   margin-top: 70px;
+   margin-left: 15%;
+   margin-right: 15%;
+   border: 2px;
+   background-color: white;
+   border-bottom-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+   border-top-right-radius: 15px;
+   border-top-left-radius: 15px;
   }
 }
 .thumbnail {
