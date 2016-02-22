@@ -1086,8 +1086,8 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
-  background-image: url("../picture/sea2.jpg");
+  background-color: #F9D69A;
+  /*background-image: url("../picture/sea2.jpg");*/
   background-repeat: repeat-x;
   background-attachment: fixed;
 }
@@ -1135,7 +1135,6 @@ img {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  padding: 4px;
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4269,8 +4268,8 @@ position:center;
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
-  right: 0;
-  left: 0;
+  right: 12%;
+  left: 12%;
   z-index: 1030;
 }
 @media (min-width: 768px) {
@@ -4511,7 +4510,10 @@ position:center;
 }
 .navbar-default {
   background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  border-color: #f8f8f8;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  box-shadow: #f8f8f8 0px 0px 10px 0px;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -4535,7 +4537,7 @@ position:center;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: #45D7EC 0px 0px 7px 0px;
+  box-shadow: #45D7EC 0px 0px 2px 0px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -5028,11 +5030,50 @@ a.badge:focus {
    margin-left: 15%;
    margin-right: 15%;
    border: 2px;
-   background-color: white;
+   background-color: rgb(226, 208, 22);
    border-bottom-right-radius: 15px;
    border-bottom-left-radius: 15px;
    border-top-right-radius: 15px;
    border-top-left-radius: 15px;
+   box-sizing: border-box;
+  }
+  .container-div-left{
+   float: left;
+   width: 20%;
+   height: max;
+   padding-left: 10px;
+   /*background-color: blue;*/
+   margin-right: 25px;
+   border-bottom-left-radius: 10px;
+   border: 2px;
+  }
+  .container-div-left > div > p{
+   font-style: bold;
+   }
+
+  .container-div-right{
+   float: right;
+   width: 20%;
+   height: max;
+   padding-left: 10px;
+   /*background-color: blue;*/
+   margin-left: 25px;
+   border-bottom-left-radius: 10px;
+   border: 2px;
+  }
+  .container-div-middle{
+   margin-left: 20%;
+   margin-right: 20%;
+   width: 60%;
+   border-right: 3px solid white;
+   border-left: 3px solid white;
+   padding-left: 10px;
+   /*background-color: yellow;*/
+   /*margin-left: 25px;*/
+   border: 20 15 10 5px;
+
+  }
+  .container-div-middle > div > p{
   }
 }
 .thumbnail {
