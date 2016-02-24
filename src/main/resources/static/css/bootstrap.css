@@ -1086,8 +1086,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #F9D69A;
-  /*background-image: url("../picture/sea2.jpg");*/
+  background-image: url("../picture/sea2.jpg");
   background-repeat: repeat-x;
   background-attachment: fixed;
 }
@@ -5027,10 +5026,10 @@ a.badge:focus {
   }
   .container-div{
    margin-top: 70px;
-   margin-left: 15%;
-   margin-right: 15%;
+   margin-left: 5%;
+   margin-right: 5%;
    border: 2px;
-   background-color: rgb(226, 208, 22);
+   background-color: rgba(226, 208, 22, 0.91);
    border-bottom-right-radius: 15px;
    border-bottom-left-radius: 15px;
    border-top-right-radius: 15px;
@@ -5047,10 +5046,29 @@ a.badge:focus {
    border-bottom-left-radius: 10px;
    border: 2px;
   }
-  .container-div-left > div > p{
-   font-style: bold;
+  .container-div-right > div,
+  .container-div-left > div {
+       background-color: white;
+       border: solid white;
+       border-bottom-left-radius: 8px;
+       border-bottom-right-radius: 8px;
+       border-top-left-radius: 8px;
+       border-top-right-radius: 8px;
+       margin-top: 10px;
+       padding-top: 2px;
+       padding-left: 2px;
    }
+   .container-div-middle > div{
+       background-color: white;
+       border: solid white;
+       border-bottom-left-radius: 8px;
+       border-bottom-right-radius: 8px;
+       border-top-left-radius: 8px;
+       border-top-right-radius: 8px;
+       margin-top: 20px;
+       margin-right: 10px;
 
+   }
   .container-div-right{
    float: right;
    width: 20%;
