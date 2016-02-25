@@ -13,6 +13,11 @@ public class MainController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String getIndexView(){
+        return "coming-soon";
+    }
+
+    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    public String getHomeView(){
         return "index";
     }
 }

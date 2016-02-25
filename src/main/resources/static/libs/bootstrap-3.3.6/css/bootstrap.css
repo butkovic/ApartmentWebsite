@@ -1086,9 +1086,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-image: url("../picture/sea2.jpg");
-  background-repeat: repeat-x;
-  background-attachment: fixed;
+  background-color: #fff;
 }
 input,
 button,
@@ -1134,6 +1132,7 @@ img {
   display: inline-block;
   max-width: 100%;
   height: auto;
+  padding: 4px;
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -1609,14 +1608,6 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  align-content: center;
-}
-.container-fluid-nav {
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-right: 35%;
-  margin-left: 35%;
-}
 }
 .row {
   margin-right: -15px;
@@ -3988,9 +3979,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   list-style: none;
 }
-.nav > div{
-position:center;
-}
 .nav > li {
   position: relative;
   display: block;
@@ -4267,8 +4255,8 @@ position:center;
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
-  right: 12%;
-  left: 12%;
+  right: 0;
+  left: 0;
   z-index: 1030;
 }
 @media (min-width: 768px) {
@@ -4509,45 +4497,32 @@ position:center;
 }
 .navbar-default {
   background-color: #f8f8f8;
-  border-color: #f8f8f8;
-  border-bottom-left-radius: 35%;
-  border-bottom-right-radius: 35%;
-  box-shadow: #f8f8f8 0px 0px 10px 0px;
+  border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
   color: #777;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  background-picture: #5e5e5e;
+  color: #5e5e5e;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: black;
+  color: #777;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  background-color: #45D7EC;
-  color: white;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: #45D7EC 0px 0px 2px 0px;
+  color: #333;
+  background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #45D7EC;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: #45D7EC 0px 0px 7px 0px;
+  background-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4988,6 +4963,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
+  background-color: #eee;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5023,75 +4999,6 @@ a.badge:focus {
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 63px;
-  }
-  .container-div{
-   margin-top: 70px;
-   margin-left: 5%;
-   margin-right: 5%;
-   border: 2px;
-   background-color: rgba(226, 208, 22, 0.91);
-   border-bottom-right-radius: 15px;
-   border-bottom-left-radius: 15px;
-   border-top-right-radius: 15px;
-   border-top-left-radius: 15px;
-   box-sizing: border-box;
-  }
-  .container-div-left{
-   float: left;
-   width: 20%;
-   height: max;
-   padding-left: 10px;
-   /*background-color: blue;*/
-   margin-right: 25px;
-   border-bottom-left-radius: 10px;
-   border: 2px;
-  }
-  .container-div-right > div,
-  .container-div-left > div {
-       background-color: white;
-       border: solid white;
-       border-bottom-left-radius: 8px;
-       border-bottom-right-radius: 8px;
-       border-top-left-radius: 8px;
-       border-top-right-radius: 8px;
-       margin-top: 10px;
-       padding-top: 2px;
-       padding-left: 2px;
-   }
-   .container-div-middle > div{
-       background-color: white;
-       border: solid white;
-       border-bottom-left-radius: 8px;
-       border-bottom-right-radius: 8px;
-       border-top-left-radius: 8px;
-       border-top-right-radius: 8px;
-       margin-top: 20px;
-       margin-right: 10px;
-
-   }
-  .container-div-right{
-   float: right;
-   width: 20%;
-   height: max;
-   padding-left: 10px;
-   /*background-color: blue;*/
-   margin-left: 25px;
-   border-bottom-left-radius: 10px;
-   border: 2px;
-  }
-  .container-div-middle{
-   margin-left: 20%;
-   margin-right: 20%;
-   width: 60%;
-   border-right: 3px solid white;
-   border-left: 3px solid white;
-   padding-left: 10px;
-   /*background-color: yellow;*/
-   /*margin-left: 25px;*/
-   border: 20 15 10 5px;
-
-  }
-  .container-div-middle > div > p{
   }
 }
 .thumbnail {
