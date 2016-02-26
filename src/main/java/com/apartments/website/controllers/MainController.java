@@ -20,4 +20,14 @@ public class MainController {
     public String getHomeView(){
         return "index";
     }
+
+    @RequestMapping(value = "/error", method = RequestMethod.GET)
+    public String getErrorView(){
+        return "error";
+    }
+
+    @RequestMapping(value = "/contact", method = RequestMethod.GET)
+    public String getContactView(){
+        return "contact";
+    }
 }

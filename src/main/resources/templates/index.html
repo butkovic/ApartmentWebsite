@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Apartment WebSite</title>
@@ -60,16 +61,16 @@
                     </div>
                     <nav class="navigation collapse navbar-collapse">
                         <ul class="nav-links nav navbar-nav">
-                            <li class="dropdown active"><a href="javascript:void(0)" class="main-menu">Home<span class="fa fa-angle-down icons-dropdown"></span></a>
-                                <ul class="dropdown-menu dropdown-menu-1">
-                                    <li><a href="index.html" class="link-page">Home page default</a></li>
-                                    <li><a href="homepage-02.html" class="link-page">Homepage Header Centered Full Color</a></li>
-                                    <li><a href="homepage-03.html" class="link-page">Homepage Header Centered Transparent</a></li>
-                                    <li><a href="homepage-04.html" class="link-page">Homepage Topbar Transparent</a></li>
-                                    <li><a href="homepage-05.html" class="link-page">Homepage Full Color</a></li>
-                                    <li><a href="homepage-06.html" class="link-page">Homepage slider</a></li>
-                                </ul>
-                            </li>
+                            <!--<li class="main-menu"><a href="javascript:void(0)" class="main-menu">Home<span class="fa fa-angle-down icons-dropdown"></span></a>-->
+                                <!--<ul class="dropdown-menu dropdown-menu-1">-->
+                                    <!--<li><a href="index.html" class="link-page">Home page default</a></li>-->
+                                    <!--<li><a href="homepage-02.html" class="link-page">Homepage Header Centered Full Color</a></li>-->
+                                    <li><a href="/home" class="main-menu" th:text="#{homepage.main.tab1}"></a></li>
+                                    <!--<li><a href="homepage-04.html" class="link-page">Homepage Topbar Transparent</a></li>-->
+                                    <!--<li><a href="homepage-05.html" class="link-page">Homepage Full Color</a></li>-->
+                                    <!--<li><a href="homepage-06.html" class="link-page">Homepage slider</a></li>-->
+                                <!--</ul>-->
+                            <!--</li>-->
                             <li class="dropdown"><a href="javascript:void(0)" class="main-menu">agents<span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="agent-list.html" class="link-page">agent list</a></li>
@@ -107,7 +108,7 @@
                                     <li><a href="404.html" class="link-page">page 404</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html" class="main-menu">contact</a></li>
+                            <li><a href="/contact" class="main-menu">contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -124,7 +125,7 @@
                     <div class="banner-03 bg-overlay banner-full-screen-2">
                         <div class="banner-03-wrapper">
                             <div class="container">
-                                <div class="wrapper-title"><h2 class="title" th:text="#{homepage.main.title}"></h2><h4 class="sub-title">find new place &qout; ENjoy your life</h4></div>
+                                <div class="wrapper-title"><h2 class="title" th:text="#{homepage.main.title}"></h2><h4 class="sub-title" th:text="#{homepage.main.title.text}"></h4></div>
                                 <div class="content"><p class="text">Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p></div>
                                 <div class="group-button"><a href="contact.html" class="btn btn-blue">SCHEDULE VISIT</a><a href="properties.html" class="btn btn-transparent white">view more</a></div>
                             </div>
@@ -509,7 +510,7 @@
                         </div>
                         <div class="container">
                             <div data-parallax="{&quot;y&quot;:&quot;20%&quot;}" class="banner-sale-off-wrapper">
-                                <div class="name-house"><h2 class="title">Rome &qout; Lazio House</h2>
+                                <div class="name-house"><h2 class="title">Rome &amp; Lazio House</h2>
 
                                     <p class="description">Modern, innovation, beautiful</p></div>
                                 <div class="price-house">
@@ -780,7 +781,7 @@
                     <ul>
                         <li><a href="index.html" class="link">Home</a></li>
                         <li><a href="#" class="link">FAQ</a></li>
-                        <li><a href="#" class="link">Privacy &qout; Term</a></li>
+                        <li><a href="#" class="link">Privacy &amp; Term</a></li>
                         <li><a href="contact.html" class="link">Contact</a></li>
                         <li><a href="#" class="link">Help</a></li>
                     </ul>
