@@ -66,7 +66,8 @@
 
                             <li><a href="/properties" class="main-menu" th:text="#{homapage.main.tab2.property}"></a></li>
 
-                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu" th:text="#{homepage.main.tab3.blog}"><span class="fa fa-angle-down icons-dropdown"></span></a>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="main-menu" th:text="#{homepage.main.tab3.blog}"><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/blog" class="link-page" th:text="#{homepage.main.tab3.1.blog}"></a></li>
                                     <li><a href="/blog-detail" class="link-page" th:text="#{homepage.main.tab3.2.blog}"></a></li>
@@ -96,8 +97,8 @@
                         <div class="banner-03-wrapper">
                             <div class="container">
                                 <div class="wrapper-title"><h2 class="title" th:text="#{homepage.main.title}"></h2><h4 class="sub-title" th:text="#{homepage.main.title.text}"></h4></div>
-                                <div class="content"><p class="text">Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p></div>
-                                <div class="group-button"><a href="contact.html" class="btn btn-blue">SCHEDULE VISIT</a><a href="properties.html" class="btn btn-transparent white">view more</a></div>
+                                <div class="content"><p class="text" th:text="#{homepage.main.title.text.more}"></p></div>
+                                <div class="group-button"><a href="/contact" class="btn btn-blue" th:text="#{homepage.main.button1.schedule.visit}"></a><a href="/properties" class="btn btn-transparent white" th:text="#{homepage.main.button2.view.more}"></a></div>
                             </div>
                         </div>
                     </div>
@@ -267,7 +268,7 @@
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-1.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-9.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
+                                                <div class="note for-rent"><p class="text">for rent</p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
@@ -319,7 +320,7 @@
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-3.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-7.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
+                                                <div class="note for-rent"><p class="text">for rent</p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
@@ -345,7 +346,7 @@
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-4.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-12.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
+                                                <div class="note for-rent"><p class="text">for rent</p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
@@ -371,7 +372,7 @@
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-5.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-10.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
+                                                <div class="note for-rent"><p class="text">for rent</p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
