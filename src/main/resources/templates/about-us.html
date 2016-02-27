@@ -2,8 +2,7 @@
 <html lang="en"
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-
-<head><title>Sunhouse | Contact Us</title>
+<head>
     <title>Apartment WebSite</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -28,22 +27,24 @@
     <link type="text/css" rel="stylesheet" href="../../css/layout.css" th:href="@{/css/layout.css}"/>
     <link type="text/css" rel="stylesheet" href="../../css/components.css" th:href="@{/css/components.css}"/>
     <link type="text/css" rel="stylesheet" href="../../css/responsive.css" th:href="@{/css/responsive.css}"/>
-    <!-- LOADING SCRIPTS FOR PAGE--></head>
+
+    <!-- LOADING SCRIPTS FOR PAGE-->
+</head>
 <body><!-- HEADER-->
 <header>
     <div class="bg-white">
         <div class="header-topbar">
             <div class="container">
                 <ul class="topbar-left list-unstyled pull-left">
-                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe" th:text="#{homepage.main.language}"></i><span></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
+                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe"></i><span>English</span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
                         <ul class="dropdown-language list-unstyled hide">
-                            <li><a href="?lang=en">English</a></li>
-                            <li><a href="?lang=hr">Hrvatski</a></li>
-                            <li><a href="?lang=de">Deutsch</a></li>
+                            <li><a href="#">Vietnam</a></li>
+                            <li><a href="#">Japan</a></li>
+                            <li><a href="#">Korea</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone" th:text="#{homepage.main.phone.number}"></i><span></span></a></li>
-                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker" th:text="#{homepage.main.contact.mail}"></i><span></span></a></li>
+                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span>+84 909 015 345</span></a></li>
+                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span>contactus@sunhouse.com</span></a></li>
                 </ul>
                 <div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
@@ -90,71 +91,182 @@
     <div id="page-wrapper"><!-- MAIN CONTENT-->
         <div class="main-content"><!-- CONTENT-->
             <div class="content">
-                <div class="section page-title contact-us-page bg-overlay">
+                <div class="section page-title about-us bg-overlay">
                     <div class="container">
-                        <div class="page-title-wrapper"><h2 class="captions">Contact us</h2>
+                        <div class="page-title-wrapper"><h2 class="captions">about us</h2>
                             <ol class="breadcrumb">
                                 <li><a href="index.html">Home</a></li>
-                                <li class="active"><a href="#">contact us</a></li>
+                                <li class="active"><a href="#">about us</a></li>
                             </ol>
                         </div>
                     </div>
                 </div>
-                <div class="section section-zindex">
-                    <div class="contact">
-                        <div class="container">
-                            <div class="contact-wrapper">
-                                <div class="contact-header">
-                                    <div class="row">
-                                        <div class="col-2">
-                                            <div class="col-md-3 col-xs-6">
-                                                <div class="contact-info-item"><i class="icon fa fa-map-signs"></i>
+                <div class="section service-content">
+                    <div class="container margin-top">
+                        <div class="media service-graph">
+                            <div class="media-left pr100 media-image"><img src="assets/images/libs/banner-about-sunhouse.jpg" alt=""/></div>
+                            <div class="media-right padding-top-2 pr25">
+                                <div class="underline media-heading">About Sunhouse real estate</div>
+                                <div class="des"><p class="text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                                                    <p class="title">Location</p>
+                                    <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
 
-                                                    <p class="text">1390 Somerset Drive, Raleigh, NC</p></div>
-                                            </div>
-                                            <div class="col-md-3 col-xs-6">
-                                                <div class="contact-info-item"><i class="icon fa fa-envelope-o"></i>
-
-                                                    <p class="title">Email Address</p>
-
-                                                    <p class="text">contactus@sunhouse.com</p></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="col-md-3 col-xs-6">
-                                                <div class="contact-info-item"><i class="icon fa fa-phone"></i>
-
-                                                    <p class="title">Phone Number</p>
-
-                                                    <p class="text">910-740-6026 - 910-940-6028</p></div>
-                                            </div>
-                                            <div class="col-md-3 col-xs-6">
-                                                <div class="contact-info-item"><i class="icon fa fa-print"></i>
-
-                                                    <p class="title">Fax Number</p>
-
-                                                    <p class="text">910-740-6026 - 910-940-6028</p></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="new-letter-wrapper">
-                                    <div class="new-letter-content"><h4 class="title">contact us</h4>
-
-                                        <p class="text">Subcribe to receive new properties with good price.</p>
-
-                                        <form><input type="text" placeholder="Your Name" class="contact-form"/><input type="email" placeholder="Your Email" class="contact-form"/><textarea placeholder="Your Message" class="contact-form"></textarea><a href="#" class="btn btn-transparent white">send message</a></form>
-                                    </div>
-                                </div>
-                                <div class="contact-us-wrapper"><img src="assets/images/libs/contact-page-banner.jpg" alt="" class="img-responsive"/><img src="assets/images/libs/banner-2-people.png" alt="" class="img-responsive img-contact-people"/></div>
+                                    <p class="text">Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan tium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.</p></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="section">
-                    <div id="map2" class="contact-map height-full-screen"></div>
+                    <div class="company-statistics padding-top padding-bottom">
+                        <div class="container">
+                            <div class="sunhouse-title white">
+                                <div class="icon-image"><img src="assets/images/logo-title-2.png" alt="" class="img-responsive"/></div>
+                                <h2 class="main-title">Company Statistics</h2>
+
+                                <p class="sub-title">One day however a small line of blind text by the name of Lorem Ipsum decided to</p></div>
+                            <div class="company-statistics-wrapper">
+                                <div class="col-md-3">
+                                    <div class="statistic-items"><i class="icons icon-house_2"></i>
+
+                                        <div data-from="0" data-to="44" data-speed="1000" class="number">0</div>
+                                        <p class="name">Projects Completed</p></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="statistic-items"><i class="icons icon-mirror"></i>
+
+                                        <div data-from="0" data-to="510" data-speed="1000" class="number">0</div>
+                                        <p class="name">Testimonials Received</p></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="statistic-items"><i class="icons icon-mail_box"></i>
+
+                                        <div data-from="0" data-to="380" data-speed="1000" class="number">0</div>
+                                        <p class="name">Happy Customers</p></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="statistic-items"><i class="icons icon-house_sell"></i>
+
+                                        <div data-from="0" data-to="190" data-speed="1000" class="number">0</div>
+                                        <p class="name">Properties Sold</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="our-agents padding-bottom padding-top">
+                        <div class="container">
+                            <div class="our-agents-wrapper">
+                                <div class="sunhouse-title">
+                                    <div class="icon-image"><img src="assets/images/logo-title-1.png" alt="" class="img-responsive"/><!--.icon-title--><!--   i.icon-house_window--></div>
+                                    <h2 class="main-title">Our Agents</h2>
+
+                                    <p class="sub-title">One day however a small line of blind text by the name of Lorem Ipsum decided to</p></div>
+                                <div class="our-agents-content">
+                                    <div class="our-agent-item">
+                                        <div class="item-wrapper">
+                                            <div class="our-agent-avatar"><img src="assets/images/avatars/avatar-3.png" alt="" class="img-responsive"/></div>
+                                            <div class="our-agent-socials"><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link google"><i class="fa fa-google-plus"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></div>
+                                        </div>
+                                        <div class="our-agent-info"><a href="agent-single.html" class="name">John Anderson</a>
+
+                                            <p class="job">Director</p></div>
+                                    </div>
+                                    <div class="our-agent-item">
+                                        <div class="item-wrapper">
+                                            <div class="our-agent-avatar"><img src="assets/images/avatars/avatar-4.png" alt="" class="img-responsive"/></div>
+                                            <div class="our-agent-socials"><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link google"><i class="fa fa-google-plus"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></div>
+                                        </div>
+                                        <div class="our-agent-info"><a href="agent-single.html" class="name">Robert Lee</a>
+
+                                            <p class="job">Expert Agent</p></div>
+                                    </div>
+                                    <div class="our-agent-item">
+                                        <div class="item-wrapper">
+                                            <div class="our-agent-avatar"><img src="assets/images/avatars/avatar-5.png" alt="" class="img-responsive"/></div>
+                                            <div class="our-agent-socials"><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link google"><i class="fa fa-google-plus"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></div>
+                                        </div>
+                                        <div class="our-agent-info"><a href="agent-single.html" class="name">Adam Smith</a>
+
+                                            <p class="job">Expert Agent</p></div>
+                                    </div>
+                                    <div class="our-agent-item">
+                                        <div class="item-wrapper">
+                                            <div class="our-agent-avatar"><img src="assets/images/avatars/avatar-6.png" alt="" class="img-responsive"/></div>
+                                            <div class="our-agent-socials"><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link google"><i class="fa fa-google-plus"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></div>
+                                        </div>
+                                        <div class="our-agent-info"><a href="agent-single.html" class="name">Leonard Gonzalez</a>
+
+                                            <p class="job">Expert Agent</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="find-best-house bg-overlay padding-bottom padding-top">
+                        <div class="container">
+                            <div class="find-best-house-wrapper"><p class="sub-title">We provide sevice</p>
+
+                                <h2 class="title">Find Your Best House For Life</h2>
+
+                                <p class="content">Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p><a href="search-properties.html" class="btn btn-blue">view more</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="our-clients-said padding-top padding-bottom">
+                        <div class="container">
+                            <div class="our-clients-said-wrapper">
+                                <div class="sunhouse-title">
+                                    <div class="icon-image"><img src="assets/images/logo-title-1.png" alt="" class="img-responsive"/><!--.icon-title--><!--   i.icon-warehouse--></div>
+                                    <h2 class="main-title">our clients said</h2>
+
+                                    <p class="sub-title">One day however a small line of blind text by the name of Lorem Ipsum decided</p></div>
+                                <div class="our-clients-said-content">
+                                    <div class="items"><p class="saying">It is a long established fact that a reader will be distracted by the readable con tent of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+
+                                        <div class="info-client">
+                                            <div class="avatar"><img src="assets/images/avatars/avatar-1.jpg" alt="" class="img-responsive"/></div>
+                                            <div class="more-info"><p class="name">Howard K. Stern</p>
+
+                                                <p class="job"> Director</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="items"><p class="saying">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. The point of using Lorem Ipsum is that distribution of letters.</p>
+
+                                        <div class="info-client">
+                                            <div class="avatar"><img src="assets/images/avatars/avatar-2.jpg" alt="" class="img-responsive"/></div>
+                                            <div class="more-info"><p class="name">Thomas More</p>
+
+                                                <p class="job"> Manager</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="group-logos">
+                        <div class="container">
+                            <div class="slider-logo-wrapper">
+                                <div class="carousel-logos">
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-1.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-2.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-3.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-4.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-5.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-1.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-2.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-3.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-4.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-5.png" alt="" class="img-responsive"/></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -306,8 +418,5 @@
 <script src="assets/libs/slick/slick.min.js"></script>
 <!-- MAIN JS-->
 <script src="assets/js/main.js"></script>
-<!-- LOADING SCRIPTS FOR PAGE-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6tm60TzeUo9rWpLnrQ7mrFn4JPMVje4&amp;amp;sensor=false"></script>
-<script src="assets/js/pages/contact.js"></script>
-</body>
+<!-- LOADING SCRIPTS FOR PAGE--></body>
 </html>

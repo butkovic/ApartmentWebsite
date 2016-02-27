@@ -30,4 +30,29 @@ public class MainController {
     public String getContactView(){
         return "contact";
     }
+
+    @RequestMapping(value = "/properties", method = RequestMethod.GET)
+    public String getPropertiesView(){
+        return "properties";
+    }
+
+    @RequestMapping(value = "/blog", method = RequestMethod.GET)
+    public String getBlogView(){
+        return "blog";
+    }
+
+    @RequestMapping(value = "/blog-detail", method = RequestMethod.GET)
+    public String getBlogDetailView(){
+        return "blog-detail";
+    }
+
+    @RequestMapping(value = "/about-us", method = RequestMethod.GET)
+    public String getAboutUsView(){
+        return "about-us";
+    }
+
+    @RequestMapping(value = "/gallery", method = RequestMethod.GET)
+    public String getGalleryView(){
+        return "gallery";
+    }
 }
