@@ -14,7 +14,7 @@
     <!-- Library css-->
     <link type="text/css" rel="stylesheet" href="../../libs/bootstrap-3.3.6/css/bootstrap.min.css" th:href="@{/libs/bootstrap-3.3.6/css/bootstrap.min.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/animate/animate.css" th:href="@{/libs/animate/animate.css}"/>
-    <link type="text/css" rel="stylesheet" href="../../libs/owl-carousel-2.0/assets/owl.carousel.css" th:href="@{/libs/owl-carousel-2.0/assets/owl.carousel.css}"/>
+    <link type="text/css" rel="stylesheet" href="../../libs/owl-carousel-2.0/../../owl.carousel.css" th:href="@{/libs/owl-carousel-2.0/../../owl.carousel.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/selectbox/css/jquery.selectbox.css" th:href="@{/libs/selectbox/css/jquery.selectbox.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/range-slider/jquery.nstSlider.min.css" th:href="@{/libs/range-slider/jquery.nstSlider.min.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/datetimepicker/css/bootstrap-datetimepicker.css" th:href="@{/libs/datetimepicker/css/bootstrap-datetimepicker.css}"/>
@@ -36,11 +36,11 @@
         <div class="header-topbar">
             <div class="container">
                 <ul class="topbar-left list-unstyled pull-left">
-                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe"></i><span>English</span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
+                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe" th:text="#{homepage.main.language}"></i><span></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
                         <ul class="dropdown-language list-unstyled hide">
-                            <li><a href="#">Vietnam</a></li>
-                            <li><a href="#">Japan</a></li>
-                            <li><a href="#">Korea</a></li>
+                            <li><a href="?lang=en">English</a></li>
+                            <li><a href="?lang=hr">Hrvatski</a></li>
+                            <li><a href="?lang=de">Deutsch</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span>+84 909 015 345</span></a></li>
@@ -55,8 +55,8 @@
             <div class="container">
                 <div class="header-main-wrapper">
                     <div class="navbar-header">
-                        <div class="logo logo-black pull-left"><a href="index.html" class="header-logo"><img src="assets/images/logo-1.png" alt=""/></a></div>
-                        <div class="logo logo-white pull-left"><a href="index.html" class="header-logo"><img src="assets/images/logo-2.png" alt=""/></a></div>
+                        <div class="logo logo-black pull-left"><a href="index.html" class="header-logo"><img src="../../images/logo-1.png" alt=""/></a></div>
+                        <div class="logo logo-white pull-left"><a href="index.html" class="header-logo"><img src="../../images/logo-2.png" alt=""/></a></div>
                         <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <nav class="navigation collapse navbar-collapse pull-right">
@@ -104,7 +104,7 @@
                 <div class="section service-content">
                     <div class="container margin-top">
                         <div class="media service-graph">
-                            <div class="media-left pr100 media-image"><img src="assets/images/libs/banner-about-sunhouse.jpg" alt=""/></div>
+                            <div class="media-left pr100 media-image"><img src="../../images/libs/banner-about-sunhouse.jpg" alt=""/></div>
                             <div class="media-right padding-top-2 pr25">
                                 <div class="underline media-heading">About Sunhouse real estate</div>
                                 <div class="des"><p class="text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -120,7 +120,7 @@
                     <div class="company-statistics padding-top padding-bottom">
                         <div class="container">
                             <div class="sunhouse-title white">
-                                <div class="icon-image"><img src="assets/images/logo-title-2.png" alt="" class="img-responsive"/></div>
+                                <div class="icon-image"><img src="../../images/logo-title-2.png" alt="" class="img-responsive"/></div>
                                 <h2 class="main-title">Company Statistics</h2>
 
                                 <p class="sub-title">One day however a small line of blind text by the name of Lorem Ipsum decided to</p></div>
@@ -158,14 +158,14 @@
                         <div class="container">
                             <div class="our-agents-wrapper">
                                 <div class="sunhouse-title">
-                                    <div class="icon-image"><img src="assets/images/logo-title-1.png" alt="" class="img-responsive"/><!--.icon-title--><!--   i.icon-house_window--></div>
+                                    <div class="icon-image"><img src="../../images/logo-title-1.png" alt="" class="img-responsive"/><!--.icon-title--><!--   i.icon-house_window--></div>
                                     <h2 class="main-title">Our Agents</h2>
 
                                     <p class="sub-title">One day however a small line of blind text by the name of Lorem Ipsum decided to</p></div>
                                 <div class="our-agents-content">
                                     <div class="our-agent-item">
                                         <div class="item-wrapper">
-                                            <div class="our-agent-avatar"><img src="assets/images/avatars/avatar-3.png" alt="" class="img-responsive"/></div>
+                                            <div class="our-agent-avatar"><img src="../../images/avatars/avatar-3.png" alt="" class="img-responsive"/></div>
                                             <div class="our-agent-socials"><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link google"><i class="fa fa-google-plus"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></div>
                                         </div>
                                         <div class="our-agent-info"><a href="agent-single.html" class="name">John Anderson</a>
@@ -174,7 +174,7 @@
                                     </div>
                                     <div class="our-agent-item">
                                         <div class="item-wrapper">
-                                            <div class="our-agent-avatar"><img src="assets/images/avatars/avatar-4.png" alt="" class="img-responsive"/></div>
+                                            <div class="our-agent-avatar"><img src="../../images/avatars/avatar-4.png" alt="" class="img-responsive"/></div>
                                             <div class="our-agent-socials"><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link google"><i class="fa fa-google-plus"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></div>
                                         </div>
                                         <div class="our-agent-info"><a href="agent-single.html" class="name">Robert Lee</a>
@@ -183,7 +183,7 @@
                                     </div>
                                     <div class="our-agent-item">
                                         <div class="item-wrapper">
-                                            <div class="our-agent-avatar"><img src="assets/images/avatars/avatar-5.png" alt="" class="img-responsive"/></div>
+                                            <div class="our-agent-avatar"><img src="../../images/avatars/avatar-5.png" alt="" class="img-responsive"/></div>
                                             <div class="our-agent-socials"><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link google"><i class="fa fa-google-plus"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></div>
                                         </div>
                                         <div class="our-agent-info"><a href="agent-single.html" class="name">Adam Smith</a>
@@ -192,7 +192,7 @@
                                     </div>
                                     <div class="our-agent-item">
                                         <div class="item-wrapper">
-                                            <div class="our-agent-avatar"><img src="assets/images/avatars/avatar-6.png" alt="" class="img-responsive"/></div>
+                                            <div class="our-agent-avatar"><img src="../../images/avatars/avatar-6.png" alt="" class="img-responsive"/></div>
                                             <div class="our-agent-socials"><a href="#" class="link facebook"><i class="fa fa-facebook"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link google"><i class="fa fa-google-plus"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a></div>
                                         </div>
                                         <div class="our-agent-info"><a href="agent-single.html" class="name">Leonard Gonzalez</a>
@@ -220,7 +220,7 @@
                         <div class="container">
                             <div class="our-clients-said-wrapper">
                                 <div class="sunhouse-title">
-                                    <div class="icon-image"><img src="assets/images/logo-title-1.png" alt="" class="img-responsive"/><!--.icon-title--><!--   i.icon-warehouse--></div>
+                                    <div class="icon-image"><img src="../../images/logo-title-1.png" alt="" class="img-responsive"/><!--.icon-title--><!--   i.icon-warehouse--></div>
                                     <h2 class="main-title">our clients said</h2>
 
                                     <p class="sub-title">One day however a small line of blind text by the name of Lorem Ipsum decided</p></div>
@@ -228,7 +228,7 @@
                                     <div class="items"><p class="saying">It is a long established fact that a reader will be distracted by the readable con tent of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
 
                                         <div class="info-client">
-                                            <div class="avatar"><img src="assets/images/avatars/avatar-1.jpg" alt="" class="img-responsive"/></div>
+                                            <div class="avatar"><img src="../../images/avatars/avatar-1.jpg" alt="" class="img-responsive"/></div>
                                             <div class="more-info"><p class="name">Howard K. Stern</p>
 
                                                 <p class="job"> Director</p></div>
@@ -237,7 +237,7 @@
                                     <div class="items"><p class="saying">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. The point of using Lorem Ipsum is that distribution of letters.</p>
 
                                         <div class="info-client">
-                                            <div class="avatar"><img src="assets/images/avatars/avatar-2.jpg" alt="" class="img-responsive"/></div>
+                                            <div class="avatar"><img src="../../images/avatars/avatar-2.jpg" alt="" class="img-responsive"/></div>
                                             <div class="more-info"><p class="name">Thomas More</p>
 
                                                 <p class="job"> Manager</p></div>
@@ -253,16 +253,16 @@
                         <div class="container">
                             <div class="slider-logo-wrapper">
                                 <div class="carousel-logos">
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-1.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-2.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-3.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-4.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-5.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-1.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-2.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-3.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-4.png" alt="" class="img-responsive"/></a></div>
-                                    <div class="logo-item item"><a href="#"><img src="assets/images/logos/logo-carousel-5.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-1.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-2.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-3.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-4.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-5.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-1.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-2.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-3.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-4.png" alt="" class="img-responsive"/></a></div>
+                                    <div class="logo-item item"><a href="#"><img src="../../images/logos/logo-carousel-5.png" alt="" class="img-responsive"/></a></div>
                                 </div>
                             </div>
                         </div>
@@ -284,8 +284,8 @@
                         <div class="row">
                             <div class="col-sm-6 col-xs-6">
                                 <div class="sunhouse-widget widget">
-                                    <div class="footer-logo footer-logo-white"><img src="assets/images/logo-2.png" alt=""/></div>
-                                    <div class="footer-logo footer-logo-black"><img src="assets/images/logo-1.png" alt=""/></div>
+                                    <div class="footer-logo footer-logo-white"><img src="../../images/logo-2.png" alt=""/></div>
+                                    <div class="footer-logo footer-logo-black"><img src="../../images/logo-1.png" alt=""/></div>
                                     <div class="content-widget"><p class="text">SunHouse perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium aperiam.</p>
 
                                         <p class="text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
@@ -335,7 +335,7 @@
                                         <div class="title-widget">form the blog</div>
                                         <div class="content-widget">
                                             <div class="media">
-                                                <div class="media-left"><a href="#" class="img-hover"><img src="assets/images/gallery/gallery-04.jpg" alt=""/></a></div>
+                                                <div class="media-left"><a href="#" class="img-hover"><img src="../../images/gallery/gallery-04.jpg" alt=""/></a></div>
                                                 <div class="media-right"><a href="#" class="title">An Open Letter to Real Estate Tech Founders</a>
 
                                                     <div class="info">
@@ -344,7 +344,7 @@
                                                 </div>
                                             </div>
                                             <div class="media">
-                                                <div class="media-left"><a href="#" class="img-hover"><img src="assets/images/gallery/gallery-09.jpg" alt=""/></a></div>
+                                                <div class="media-left"><a href="#" class="img-hover"><img src="../../images/gallery/gallery-09.jpg" alt=""/></a></div>
                                                 <div class="media-right"><a href="#" class="title">What's Wrong with Venture Capital</a>
 
                                                     <div class="info">
@@ -353,7 +353,7 @@
                                                 </div>
                                             </div>
                                             <div class="media">
-                                                <div class="media-left"><a href="#" class="img-hover"><img src="assets/images/gallery/gallery-01.jpg" alt=""/></a></div>
+                                                <div class="media-left"><a href="#" class="img-hover"><img src="../../images/gallery/gallery-01.jpg" alt=""/></a></div>
                                                 <div class="media-right"><a href="#" class="title">A Peek into the Future of Real Estate</a>
 
                                                     <div class="info">
@@ -370,8 +370,8 @@
                                     <div class="gallery-widget">
                                         <div class="title-widget">GALLERIES</div>
                                         <div class="content-widget">
-                                            <div class="gallery-list"><a href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-01.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-02.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-03.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-04.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-05.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-06.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-07.jpg" alt="" class="img-responsive"/></a><a
-                                                    href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-08.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="assets/images/gallery/gallery-09.jpg" alt="" class="img-responsive"/></a></div>
+                                            <div class="gallery-list"><a href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-01.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-02.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-03.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-04.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-05.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-06.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-07.jpg" alt="" class="img-responsive"/></a><a
+                                                    href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-08.jpg" alt="" class="img-responsive"/></a><a href="#" class="thumb img-hover"><img src="../../images/gallery/gallery-09.jpg" alt="" class="img-responsive"/></a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -399,24 +399,24 @@
     </div>
 </footer>
 <!--.body-2.loading<div class="dots-loader"></div>--><!-- JAVASCRIPT LIBS-->
-<script src="assets/libs/jquery/jquery-2.1.4.min.js"></script>
-<script src="assets/libs/detect/browser.js"></script>
-<script src="assets/libs/moment/js/moment.min.js"></script>
-<script src="assets/libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
-<script src="assets/libs/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-<script src="assets/libs/smooth-scroll/jquery-smoothscroll.js"></script>
-<script src="assets/libs/owl-carousel-2.0/owl.carousel.min.js"></script>
-<script src="assets/libs/fancybox/js/jquery.fancybox.js"></script>
-<script src="assets/libs/fancybox/js/jquery.fancybox-buttons.js"></script>
-<script src="assets/libs/appear/jquery.appear.js"></script>
-<script src="assets/libs/count-to/jquery.countTo.js"></script>
-<script src="assets/libs/wow-js/wow.min.js"></script>
-<script src="assets/libs/selectbox/js/jquery.selectbox-0.2.min.js"></script>
-<script src="assets/libs/select2/select2.min.js"></script>
-<script src="assets/libs/range-slider/jquery.nstSlider.min.js"></script>
-<script src="assets/libs/parallax/jquery.data-parallax.min.js"></script>
-<script src="assets/libs/slick/slick.min.js"></script>
+<script src="../../libs/jquery/jquery-2.1.4.min.js"></script>
+<script src="../../libs/detect/browser.js"></script>
+<script src="../../libs/moment/js/moment.min.js"></script>
+<script src="../../libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script src="../../libs/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../../libs/smooth-scroll/jquery-smoothscroll.js"></script>
+<script src="../../libs/owl-carousel-2.0/owl.carousel.min.js"></script>
+<script src="../../libs/fancybox/js/jquery.fancybox.js"></script>
+<script src="../../libs/fancybox/js/jquery.fancybox-buttons.js"></script>
+<script src="../../libs/appear/jquery.appear.js"></script>
+<script src="../../libs/count-to/jquery.countTo.js"></script>
+<script src="../../libs/wow-js/wow.min.js"></script>
+<script src="../../libs/selectbox/js/jquery.selectbox-0.2.min.js"></script>
+<script src="../../libs/select2/select2.min.js"></script>
+<script src="../../libs/range-slider/jquery.nstSlider.min.js"></script>
+<script src="../../libs/parallax/jquery.data-parallax.min.js"></script>
+<script src="../../libs/slick/slick.min.js"></script>
 <!-- MAIN JS-->
-<script src="assets/js/main.js"></script>
+<script src="../../js/main.js"></script>
 <!-- LOADING SCRIPTS FOR PAGE--></body>
 </html>
