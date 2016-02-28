@@ -36,15 +36,15 @@
         <div class="header-topbar">
             <div class="container">
                 <ul class="topbar-left list-unstyled pull-left">
-                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe"></i><span th:text="#{homepage.main.language}"></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
+                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe"></i><span th:text="#{header.navbar.top.language}"></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
                         <ul class="dropdown-language list-unstyled hide">
                             <li><a href="?lang=en">English</a></li>
                             <li><a href="?lang=hr">Hrvatski</a></li>
                             <li><a href="?lang=de">Deutsch</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{homepage.main.phone.number}"></span></a></li>
-                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{homepage.main.contact.mail}"></span></a></li>
+                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
+                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
                 <div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
@@ -64,22 +64,22 @@
 
                             <li><a href="/home" class="main-menu" th:text="#{header.navbar.tab1}"></a></li>
 
-                            <li><a href="/properties" class="main-menu" th:text="#{homapage.main.tab2.property}"></a></li>
+                            <li><a href="/properties" class="main-menu" th:text="#{header.navbar.tab2.property}"></a></li>
 
                             <li class="dropdown">
-                                <a href="javascript:void(0)" class="main-menu"><span th:text="#{homepage.main.tab3.blog}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
+                                <a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab3.blog}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
-                                    <li><a href="/blog" class="link-page" th:text="#{homepage.main.tab3.1.blog}"></a></li>
-                                    <li><a href="/blog-detail" class="link-page" th:text="#{homepage.main.tab3.2.blog}"></a></li>
+                                    <li><a href="/blog" class="link-page" th:text="#{header.navbar.tab3.1.blog}"></a></li>
+                                    <li><a href="/blog-detail" class="link-page" th:text="#{header.navbar.tab3.2.blog}"></a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{homepage.main.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
+                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
-                                    <li><a href="/gallery" class="link-page" th:text="#{homepage.main.tab4.1.gallery}"></a></li>
-                                    <li><a href="/about-us" class="link-page" th:text="#{homepage.main.tab4.2.about.us}"></a></li>
+                                    <li><a href="/gallery" class="link-page" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
+                                    <li><a href="/about-us" class="link-page" th:text="#{header.navbar.tab4.2.about.us}"></a></li>
                                 </ul>
                             </li>
-                            <li><a href="/contact" class="main-menu" th:text="#{homapage.main.tab5.contact}"></a></li>
+                            <li><a href="/contact" class="main-menu" th:text="#{header.navbar.tab5.contact}"></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -96,9 +96,9 @@
                     <div class="banner-03 bg-overlay banner-full-screen-2">
                         <div class="banner-03-wrapper">
                             <div class="container">
-                                <div class="wrapper-title"><h2 class="title" th:text="#{homepage.main.title}"></h2><h4 class="sub-title" th:text="#{homepage.main.title.text}"></h4></div>
-                                <div class="content"><p class="text" th:text="#{homepage.main.title.text.more}"></p></div>
-                                <div class="group-button"><a href="/contact" class="btn btn-blue" th:text="#{homepage.main.button1.schedule.visit}"></a><a href="/properties" class="btn btn-transparent white" th:text="#{homepage.main.button2.view.more}"></a></div>
+                                <div class="wrapper-title"><h2 class="title" th:text="#{homepage.title}"></h2><h4 class="sub-title" th:text="#{homepage.title.text}"></h4></div>
+                                <div class="content"><p class="text" th:text="#{homepage.title.text.more}"></p></div>
+                                <div class="group-button"><a href="/contact" class="btn btn-blue" th:text="#{homepage.button1.schedule.visit}"></a><a href="/properties" class="btn btn-transparent white" th:text="#{homepage.button2.view.more}"></a></div>
                             </div>
                         </div>
                     </div>
@@ -108,22 +108,22 @@
                         <div class="container">
                             <div class="about-house-wrapper">
                                 <div class="about-house-image"><img src="../../images/libs/about-home-1.jpg" alt="" class="img-responsive"/></div>
-                                <div class="about-house-content"><h2 class="title" th:text="#{homepage.main.section1.title}"></h2>
+                                <div class="about-house-content"><h2 class="title" th:text="#{homepage.section1.title}"></h2>
 
-                                    <p class="text" th:text="#{homepage.main.section1.text1}"></p>
+                                    <p class="text" th:text="#{homepage.section1.text1}"></p>
 
-                                    <p class="text" th:text="#{homepage.main.section1.text2}"></p>
+                                    <p class="text" th:text="#{homepage.section1.text2}"></p>
 
                                     <div class="info-house">
                                         <div class="info"><i class="icon-house_1"></i>
 
-                                            <p th:text="#{homepage.main.section1.surface}"></p></div>
+                                            <p th:text="#{homepage.section1.surface}"></p></div>
                                         <div class="info"><i class="icon-bed"></i>
 
-                                            <p th:text="#{homepage.main.section1.number.of.bedrooms}"></p></div>
+                                            <p th:text="#{homepage.section1.number.of.bedrooms}"></p></div>
                                         <div class="info"><i class="icon-bath"></i>
 
-                                            <p th:text="#{homepage.main.section1.number.of.bathrooms}"></p></div>
+                                            <p th:text="#{homepage.section1.number.of.bathrooms}"></p></div>
                                     </div>
                                 </div>
                             </div>
@@ -260,32 +260,32 @@
                             <div class="newest-properties-wrapper">
                                 <div class="sunhouse-title">
                                     <div class="icon-image"><img src="../../images/logo-title-1.png" alt="" class="img-responsive"/><!--.icon-title--><!--    i.icon-church--></div>
-                                    <h2 class="main-title" th:text="#{homepage.main.section2.title}"></h2>
+                                    <h2 class="main-title" th:text="#{homepage.section2.title}"></h2>
 
-                                    <p class="sub-title" th:text="#{homepage.main.section2.subtitle}"></p></div>
+                                    <p class="sub-title" th:text="#{homepage.section2.subtitle}"></p></div>
                                 <div class="row">
                                     <div class="newest-properties-content">
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-1.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-9.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room1.surface}"></p><sup>2</sup></div>
+                                                            <p th:text="#{homepage.section2.room1.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room1.number.of.bedrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room1.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room1.number.of.bathrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room1.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room1.title}"></a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.section2.room1.title}"></a>
 
-                                                        <p class="text" th:text="#{homepage.main.section2.room1.subtitle}"></p></div>
+                                                        <p class="text" th:text="#{homepage.section2.room1.subtitle}"></p></div>
                                                     <div class="more-info-house">
-                                                        <div class="price" th:text="#{homepage.main.section2.room1.price}"></div>
+                                                        <div class="price" th:text="#{homepage.section2.room1.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -293,24 +293,24 @@
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-2.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-8.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room2.surface}"></p><sup>2</sup></div>
+                                                            <p th:text="#{homepage.section2.room2.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room2.number.of.bedrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room2.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room2.number.of.bathrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room2.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room2.title}"></a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.section2.room2.title}"></a>
 
-                                                        <p class="text" th:text="#{homepage.main.section2.room2.subtitle}"></p></div>
+                                                        <p class="text" th:text="#{homepage.section2.room2.subtitle}"></p></div>
                                                     <div class="more-info-house">
-                                                        <div class="price" th:text="#{homepage.main.section2.room2.price}"></div>
+                                                        <div class="price" th:text="#{homepage.section2.room2.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -318,24 +318,24 @@
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-3.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-7.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room3.surface}"></p><sup>2</sup></div>
+                                                            <p th:text="#{homepage.section2.room3.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room3.number.of.bedrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room3.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room3.number.of.bathrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room3.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room3.title}"></a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.section2.room3.title}"></a>
 
-                                                        <p class="text" th:text="#{homepage.main.section2.room3.subtitle}"></p></div>
+                                                        <p class="text" th:text="#{homepage.section2.room3.subtitle}"></p></div>
                                                     <div class="more-info-house">
-                                                        <div class="price" th:text="#{homepage.main.section2.room3.price}"></div>
+                                                        <div class="price" th:text="#{homepage.section2.room3.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -343,24 +343,24 @@
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-4.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-12.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room4.surface}"></p><sup>2</sup></div>
+                                                            <p th:text="#{homepage.section2.room4.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room4.number.of.bedrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room4.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room4.number.of.bathrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room4.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room4.title}"></a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.section2.room4.title}"></a>
 
-                                                        <p class="text" th:text="#{homepage.main.section2.room4.subtitle}"></p></div>
+                                                        <p class="text" th:text="#{homepage.section2.room4.subtitle}"></p></div>
                                                     <div class="more-info-house">
-                                                        <div class="price" th:text="#{homepage.main.section2.room4.price}"></div>
+                                                        <div class="price" th:text="#{homepage.section2.room4.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -368,24 +368,24 @@
                                         <div class="col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="property-detail.html" class="wrapper-image"><img src="../../images/houses/house-5.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-10.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room5.surface}"></p><sup>2</sup></div>
+                                                            <p th:text="#{homepage.section2.room5.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room5.number.of.bedrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room5.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room5.number.of.bathrooms}"></p></div>
+                                                            <p th:text="#{homepage.section2.room5.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room5.title}"></a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.section2.room5.title}"></a>
 
-                                                        <p class="text" th:text="#{homepage.main.section2.room5.subtitle}"></p></div>
+                                                        <p class="text" th:text="#{homepage.section2.room5.subtitle}"></p></div>
                                                     <div class="more-info-house">
-                                                        <div class="price" th:text="#{homepage.main.section2.room5.price}"></div>
+                                                        <div class="price" th:text="#{homepage.section2.room5.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>

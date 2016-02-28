@@ -14,7 +14,8 @@
     <!-- Library css-->
     <link type="text/css" rel="stylesheet" href="../../libs/bootstrap-3.3.6/css/bootstrap.min.css" th:href="@{/libs/bootstrap-3.3.6/css/bootstrap.min.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/animate/animate.css" th:href="@{/libs/animate/animate.css}"/>
-    <link type="text/css" rel="stylesheet" href="../../libs/owl-carousel-2.0/assets/owl.carousel.css" th:href="@{/libs/owl-carousel-2.0/assets/owl.carousel.css}"/>    <link type="text/css" rel="stylesheet" href="../../libs/selectbox/css/jquery.selectbox.css" th:href="@{/libs/selectbox/css/jquery.selectbox.css}"/>
+    <link type="text/css" rel="stylesheet" href="../../libs/owl-carousel-2.0/assets/owl.carousel.css" th:href="@{/libs/owl-carousel-2.0/assets/owl.carousel.css}"/>
+    <link type="text/css" rel="stylesheet" href="../../libs/selectbox/css/jquery.selectbox.css" th:href="@{/libs/selectbox/css/jquery.selectbox.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/range-slider/jquery.nstSlider.min.css" th:href="@{/libs/range-slider/jquery.nstSlider.min.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/datetimepicker/css/bootstrap-datetimepicker.css" th:href="@{/libs/datetimepicker/css/bootstrap-datetimepicker.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/fancybox/css/jquery.fancybox.css" th:href="@{/libs/fancybox/css/jquery.fancybox.css}"/>
@@ -35,15 +36,15 @@
         <div class="header-topbar">
             <div class="container">
                 <ul class="topbar-left list-unstyled pull-left">
-                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe"></i><span>English</span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
+                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe"></i><span th:text="#{header.navbar.top.language}"></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
                         <ul class="dropdown-language list-unstyled hide">
-                            <li><a href="#">Vietnam</a></li>
-                            <li><a href="#">Japan</a></li>
-                            <li><a href="#">Korea</a></li>
+                            <li><a href="?lang=en">English</a></li>
+                            <li><a href="?lang=hr">Hrvatski</a></li>
+                            <li><a href="?lang=de">Deutsch</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span>+84 909 015 345</span></a></li>
-                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span>contactus@sunhouse.com</span></a></li>
+                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
+                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
                 <div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
@@ -63,21 +64,21 @@
 
                             <li><a href="/home" class="main-menu" th:text="#{header.navbar.tab1}"></a></li>
 
-                            <li><a href="/properties" class="main-menu" th:text="#{homapage.main.tab2.property}"></a></li>
+                            <li><a href="/properties" class="main-menu" th:text="#{header.navbar.tab2.property}"></a></li>
 
-                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu" th:text="#{homepage.main.tab3.blog}"><span class="fa fa-angle-down icons-dropdown"></span></a>
+                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab3.blog}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
-                                    <li><a href="/blog" class="link-page" th:text="#{homepage.main.tab3.1.blog}"></a></li>
-                                    <li><a href="/blog-detail" class="link-page" th:text="#{homepage.main.tab3.2.blog}"></a></li>
+                                    <li><a href="/blog" class="link-page" th:text="#{header.navbar.tab3.1.blog}"></a></li>
+                                    <li><a href="/blog-detail" class="link-page" th:text="#{header.navbar.tab3.2.blog}"></a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu" th:text="#{homepage.main.tab4.page}"><span class="fa fa-angle-down icons-dropdown"></span></a>
+                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
-                                    <li><a href="/gallery" class="link-page" th:text="#{homepage.main.tab4.1.gallery}"></a></li>
-                                    <li><a href="/about-us" class="link-page" th:text="#{homepage.main.tab4.2.about.us}"></a></li>
+                                    <li><a href="/gallery" class="link-page" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
+                                    <li><a href="/about-us" class="link-page" th:text="#{header.navbar.tab4.2.about.us}"></a></li>
                                 </ul>
                             </li>
-                            <li><a href="/contact" class="main-menu" th:text="#{homapage.main.tab5.contact}"></a></li>
+                            <li><a href="/contact" class="main-menu" th:text="#{header.navbar.tab5.contact}"></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -92,38 +93,17 @@
             <div class="content">
                 <div class="section page-title gallery bg-overlay">
                     <div class="container">
-                        <div class="page-title-wrapper"><h2 class="captions">gallery</h2>
+                        <div class="page-title-wrapper"><h2 class="captions" th:text="#{gallery.title.navbar.title}"></h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active"><a href="#">gallery</a></li>
+                                <li><a href="index.html" th:text="#{gallery.title.navbar.home}"></a></li>
+                                <li class="active"><a href="#" th:text="#{gallery.title.navbar.gallery}"></a></li>
                             </ol>
                         </div>
                     </div>
                 </div>
                 <div class="section gallery-content">
                     <div class="container margin-top">
-                        <div class="gallery-nav"><a role="button" data-toggle="collapse" href="#filters" aria-expanded="false" aria-controls="filters" class="btn btn-primary hidden-lg hidden-md hidden-sm"><span>All</span><i class="fa fa-angle-down"></i></a>
 
-                            <div id="filters" class="button-group filters-button-group">
-                                <div class="general">
-                                    <button data-filter="*" data-category="all" onclick="getname(this)" class="btn btn-white-blue-2 btn-all is-checked"><span>all</span></button>
-                                </div>
-                                <div class="specific">
-                                    <button data-filter=".apartment" data-category="apartment" onclick="getname(this)" class="btn btn-white-blue-2"><span>apartment</span></button>
-                                    <button data-filter=".condo" data-category="condo" onclick="getname(this)" class="btn btn-white-blue-2"><span>Condo</span></button>
-                                    <button data-filter=".cottage" data-category="cottage" onclick="getname(this)" class="btn btn-white-blue-2"><span>Cottage</span></button>
-                                    <button data-filter=".familyhome" data-category="family home" onclick="getname(this)" class="btn btn-white-blue-2"><span>Family Home</span></button>
-                                    <button data-filter=".singlehome" data-category="single home" onclick="getname(this)" class="btn btn-white-blue-2"><span>Single Home</span></button>
-                                    <button data-filter=".farmhouse" data-category="farm house" onclick="getname(this)" class="btn btn-white-blue-2"><span>Farm House</span></button>
-                                    <button data-filter=".bungalow" data-category="bungalow" onclick="getname(this)" class="btn btn-white-blue-2"><span>Bungalow</span></button>
-                                    <button data-filter=".mansion" data-category="mansion" onclick="getname(this)" class="btn btn-white-blue-2"><span>Mansion</span></button>
-                                    <button data-filter=".villa" data-category="villa" onclick="getname(this)" class="btn btn-white-blue-2"><span>Villa</span></button>
-                                    <button data-filter=".longhouse" data-category="long house" onclick="getname(this)" class="btn btn-white-blue-2"><span>Long House</span></button>
-                                    <button data-filter=".barndominium" data-category="barndominium" onclick="getname(this)" class="btn btn-white-blue-2"><span>Barndominium</span></button>
-                                    <button data-filter=".colonial" data-category="colonial" onclick="getname(this)" class="btn btn-white-blue-2"><span>Colonial</span></button>
-                                </div>
-                            </div>
-                        </div>
                         <div class="group-title padding-top">
                             <div id="gallery-title" class="title">all</div>
                             <div class="des">Quisque euismod mi sit amet aliquet lobortis. Etiam nec magna imperdiet, molestie risus eget, mollis ex. Donec non enim dignissim, dignissim velit sed.</div>

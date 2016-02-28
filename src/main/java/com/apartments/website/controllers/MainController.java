@@ -42,9 +42,7 @@ public class MainController {
     }
 
     @RequestMapping(value = "/blog-detail", method = RequestMethod.GET)
-    public String getBlogDetailView(){
-        return "blog-detail";
-    }
+    public String getBlogDetailView(){return "blog-detail"; }
 
     @RequestMapping(value = "/about-us", method = RequestMethod.GET)
     public String getAboutUsView(){
@@ -55,4 +53,10 @@ public class MainController {
     public String getGalleryView(){
         return "gallery";
     }
+
+    @RequestMapping(value = "/property-detail-1", method = RequestMethod.GET)
+    public String getPropertyDetail1View(){
+        return "property-detail-1";
+    }
+
 }
