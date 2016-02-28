@@ -36,15 +36,15 @@
         <div class="header-topbar">
             <div class="container">
                 <ul class="topbar-left list-unstyled pull-left">
-                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe" th:text="#{homepage.main.language}"></i><span></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
+                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe"></i><span th:text="#{homepage.main.language}"></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
                         <ul class="dropdown-language list-unstyled hide">
                             <li><a href="?lang=en">English</a></li>
                             <li><a href="?lang=hr">Hrvatski</a></li>
                             <li><a href="?lang=de">Deutsch</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone" th:text="#{homepage.main.phone.number}"></i><span></span></a></li>
-                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker" th:text="#{homepage.main.contact.mail}"></i><span></span></a></li>
+                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{homepage.main.phone.number}"></span></a></li>
+                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{homepage.main.contact.mail}"></span></a></li>
                 </ul>
                 <div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
@@ -62,18 +62,18 @@
                     <nav class="navigation collapse navbar-collapse">
                         <ul class="nav-links nav navbar-nav">
 
-                            <li><a href="/home" class="main-menu" th:text="#{homepage.main.tab1.homepage}"></a></li>
+                            <li><a href="/home" class="main-menu" th:text="#{header.navbar.tab1}"></a></li>
 
                             <li><a href="/properties" class="main-menu" th:text="#{homapage.main.tab2.property}"></a></li>
 
                             <li class="dropdown">
-                                <a href="javascript:void(0)" class="main-menu" th:text="#{homepage.main.tab3.blog}"><span class="fa fa-angle-down icons-dropdown"></span></a>
+                                <a href="javascript:void(0)" class="main-menu"><span th:text="#{homepage.main.tab3.blog}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/blog" class="link-page" th:text="#{homepage.main.tab3.1.blog}"></a></li>
                                     <li><a href="/blog-detail" class="link-page" th:text="#{homepage.main.tab3.2.blog}"></a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu" th:text="#{homepage.main.tab4.page}"><span class="fa fa-angle-down icons-dropdown"></span></a>
+                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{homepage.main.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/gallery" class="link-page" th:text="#{homepage.main.tab4.1.gallery}"></a></li>
                                     <li><a href="/about-us" class="link-page" th:text="#{homepage.main.tab4.2.about.us}"></a></li>
@@ -273,7 +273,7 @@
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room1.surface}"></p></div>
+                                                            <p th:text="#{homepage.main.section2.room1.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
                                                             <p th:text="#{homepage.main.section2.room1.number.of.bedrooms}"></p></div>
@@ -298,7 +298,7 @@
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room2.surface}"></p></div>
+                                                            <p th:text="#{homepage.main.section2.room2.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
                                                             <p th:text="#{homepage.main.section2.room2.number.of.bedrooms}"></p></div>
@@ -323,7 +323,7 @@
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room3.surface}"></p></div>
+                                                            <p th:text="#{homepage.main.section2.room3.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
                                                             <p th:text="#{homepage.main.section2.room3.number.of.bedrooms}"></p></div>
@@ -348,7 +348,7 @@
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room4.surface}"></p></div>
+                                                            <p th:text="#{homepage.main.section2.room4.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
                                                             <p th:text="#{homepage.main.section2.room4.number.of.bedrooms}"></p></div>
@@ -373,7 +373,7 @@
                                                     <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p th:text="#{homepage.main.section2.room5.surface}"></p></div>
+                                                            <p th:text="#{homepage.main.section2.room5.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
                                                             <p th:text="#{homepage.main.section2.room5.number.of.bedrooms}"></p></div>

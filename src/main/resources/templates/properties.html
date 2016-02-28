@@ -15,7 +15,7 @@
     <!-- Library css-->
     <link type="text/css" rel="stylesheet" href="../../libs/bootstrap-3.3.6/css/bootstrap.min.css" th:href="@{/libs/bootstrap-3.3.6/css/bootstrap.min.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/animate/animate.css" th:href="@{/libs/animate/animate.css}"/>
-    <link type="text/css" rel="stylesheet" href="../../libs/owl-carousel-2.0/../../owl.carousel.css" th:href="@{/libs/owl-carousel-2.0/../../owl.carousel.css}"/>
+    <link type="text/css" rel="stylesheet" href="../../libs/owl-carousel-2.0/assets/owl.carousel.css" th:href="@{/libs/owl-carousel-2.0/assets/owl.carousel.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/selectbox/css/jquery.selectbox.css" th:href="@{/libs/selectbox/css/jquery.selectbox.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/range-slider/jquery.nstSlider.min.css" th:href="@{/libs/range-slider/jquery.nstSlider.min.css}"/>
     <link type="text/css" rel="stylesheet" href="../../libs/datetimepicker/css/bootstrap-datetimepicker.css" th:href="@{/libs/datetimepicker/css/bootstrap-datetimepicker.css}"/>
@@ -35,15 +35,15 @@
         <div class="header-topbar">
             <div class="container">
                 <ul class="topbar-left list-unstyled pull-left">
-                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe" th:text="#{homepage.main.language}"></i><span></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
+                    <li><a href="javascript:void(0)" class="language"><i class="topbar-icon fa fa-globe"></i><span th:text="#{homepage.main.language}"></span><i class="topbar-icon icons-dropdown fa fa-angle-down"></i></a>
                         <ul class="dropdown-language list-unstyled hide">
                             <li><a href="?lang=en">English</a></li>
                             <li><a href="?lang=hr">Hrvatski</a></li>
                             <li><a href="?lang=de">Deutsch</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone" th:text="#{homepage.main.phone.number}"></i><span></span></a></li>
-                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker" th:text="#{homepage.main.contact.mail}"></i><span></span></a></li>
+                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{homepage.main.phone.number}"></span></a></li>
+                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{homepage.main.contact.mail}"></span></a></li>
                 </ul>
                 <div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
@@ -61,7 +61,7 @@
                     <nav class="navigation collapse navbar-collapse pull-right">
                         <ul class="nav-links nav navbar-nav">
 
-                            <li><a href="/home" class="main-menu" th:text="#{homepage.main.tab1.homepage}"></a></li>
+                            <li><a href="/home" class="main-menu" th:text="#{header.navbar.tab1}"></a></li>
 
                             <li><a href="/properties" class="main-menu" th:text="#{homapage.main.tab2.property}"></a></li>
 
@@ -92,10 +92,10 @@
             <div class="content">
                 <div class="section page-title property-view bg-overlay">
                     <div class="container">
-                        <div class="page-title-wrapper"><h2 class="captions">list house</h2>
+                        <div class="page-title-wrapper"><h2 class="captions" th:text="#{properties.title.navbar.title}"></h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active"><a href="#">properties</a></li>
+                                <li><a href="index.html" th:text="#{properties.title.navbar.home}"></a></li>
+                                <li class="active"><a href="#" th:text="#{properties.title.navbar.properties}"></a></li>
                             </ol>
                         </div>
                     </div>
@@ -227,42 +227,24 @@
                                         <div class="property-item col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-1.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-7.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
+                                                    <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p>12,000 Sq Ft</p></div>
+                                                            <p th:text="#{homepage.main.section2.room1.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p>3 bedroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room1.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p>2 bathroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room1.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room1.title}"></a>
 
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 765,300</div>
+                                                        <p class="text" th:text="#{homepage.main.section2.room1.subtitle}"></p></div>
+                                                    <div class="more-info-house">
+                                                        <div class="price" th:text="#{homepage.main.section2.room1.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -270,42 +252,24 @@
                                         <div class="property-item col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-2.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-8.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-rent"><p class="text">for rent</p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
+                                                    <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p>12,000 Sq Ft</p></div>
+                                                            <p th:text="#{homepage.main.section2.room2.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p>3 bedroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room2.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p>2 bathroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room2.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room2.title}"></a>
 
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="search-properties.html">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 980/<span>month</span></div>
+                                                        <p class="text" th:text="#{homepage.main.section2.room2.subtitle}"></p></div>
+                                                    <div class="more-info-house">
+                                                        <div class="price" th:text="#{homepage.main.section2.room2.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -313,42 +277,24 @@
                                         <div class="property-item col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-3.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-9.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
+                                                    <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p>12,000 Sq Ft</p></div>
+                                                            <p th:text="#{homepage.main.section2.room3.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p>3 bedroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room3.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p>2 bathroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room3.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room3.title}"></a>
 
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 765,300</div>
+                                                        <p class="text" th:text="#{homepage.main.section2.room3.subtitle}"></p></div>
+                                                    <div class="more-info-house">
+                                                        <div class="price" th:text="#{homepage.main.section2.room3.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -356,42 +302,24 @@
                                         <div class="property-item col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-4.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-10.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-rent"><p class="text">for rent</p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
+                                                    <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p>12,000 Sq Ft</p></div>
+                                                            <p th:text="#{homepage.main.section2.room4.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p>3 bedroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room4.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p>2 bathroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room4.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room4.title}"></a>
 
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="search-properties.html">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 980/<span>month</span></div>
+                                                        <p class="text" th:text="#{homepage.main.section2.room4.subtitle}"></p></div>
+                                                    <div class="more-info-house">
+                                                        <div class="price" th:text="#{homepage.main.section2.room4.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -399,42 +327,24 @@
                                         <div class="property-item col-md-4 col-xs-6">
                                             <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-5.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-11.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
+                                                <div class="note for-rent"><p class="text" th:text="#{homepage.main.section2.for.rent}"></p></div>
                                                 <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
+                                                    <div class="info-house">
                                                         <div class="info"><i class="icon-house_1"></i>
 
-                                                            <p>12,000 Sq Ft</p></div>
+                                                            <p th:text="#{homepage.main.section2.room5.surface}"></p><sup>2</sup></div>
                                                         <div class="info"><i class="icon-bed"></i>
 
-                                                            <p>3 bedroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room5.number.of.bedrooms}"></p></div>
                                                         <div class="info"><i class="icon-bath"></i>
 
-                                                            <p>2 bathroom</p></div>
+                                                            <p th:text="#{homepage.main.section2.room5.number.of.bathrooms}"></p></div>
                                                     </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
+                                                    <div class="about-house"><a href="search-properties.html" class="title" th:text="#{homepage.main.section2.room5.title}"></a>
 
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 765,300</div>
+                                                        <p class="text" th:text="#{homepage.main.section2.room5.subtitle}"></p></div>
+                                                    <div class="more-info-house">
+                                                        <div class="price" th:text="#{homepage.main.section2.room5.price}"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -482,274 +392,11 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="property-item col-md-4 col-xs-6">
-                                            <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-7.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-5.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
-                                                <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
-                                                        <div class="info"><i class="icon-house_1"></i>
-
-                                                            <p>12,000 Sq Ft</p></div>
-                                                        <div class="info"><i class="icon-bed"></i>
-
-                                                            <p>3 bedroom</p></div>
-                                                        <div class="info"><i class="icon-bath"></i>
-
-                                                            <p>2 bathroom</p></div>
-                                                    </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
-
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 765,300</div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
-                                        <div class="property-item col-md-4 col-xs-6">
-                                            <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-8.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-1.jpg" alt="" class="img-responsive layout-2"/></a>
 
-                                                <div class="note for-rent"><p class="text">for rent</p></div>
-                                                <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
-                                                        <div class="info"><i class="icon-house_1"></i>
-
-                                                            <p>12,000 Sq Ft</p></div>
-                                                        <div class="info"><i class="icon-bed"></i>
-
-                                                            <p>3 bedroom</p></div>
-                                                        <div class="info"><i class="icon-bath"></i>
-
-                                                            <p>2 bathroom</p></div>
-                                                    </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
-
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="search-properties.html">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 980/<span>month</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="property-item col-md-4 col-xs-6">
-                                            <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-1.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-7.jpg" alt="" class="img-responsive layout-2"/></a>
-
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
-                                                <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
-                                                        <div class="info"><i class="icon-house_1"></i>
-
-                                                            <p>12,000 Sq Ft</p></div>
-                                                        <div class="info"><i class="icon-bed"></i>
-
-                                                            <p>3 bedroom</p></div>
-                                                        <div class="info"><i class="icon-bath"></i>
-
-                                                            <p>2 bathroom</p></div>
-                                                    </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
-
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 765,300</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="property-item col-md-4 col-xs-6">
-                                            <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-2.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-8.jpg" alt="" class="img-responsive layout-2"/></a>
-
-                                                <div class="note for-rent"><p class="text">for rent</p></div>
-                                                <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
-                                                        <div class="info"><i class="icon-house_1"></i>
-
-                                                            <p>12,000 Sq Ft</p></div>
-                                                        <div class="info"><i class="icon-bed"></i>
-
-                                                            <p>3 bedroom</p></div>
-                                                        <div class="info"><i class="icon-bath"></i>
-
-                                                            <p>2 bathroom</p></div>
-                                                    </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
-
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="search-properties.html">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 980/<span>month</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="property-item col-md-4 col-xs-6">
-                                            <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-3.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-9.jpg" alt="" class="img-responsive layout-2"/></a>
-
-                                                <div class="note for-sale"><p class="text">for sale</p></div>
-                                                <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
-                                                        <div class="info"><i class="icon-house_1"></i>
-
-                                                            <p>12,000 Sq Ft</p></div>
-                                                        <div class="info"><i class="icon-bed"></i>
-
-                                                            <p>3 bedroom</p></div>
-                                                        <div class="info"><i class="icon-bath"></i>
-
-                                                            <p>2 bathroom</p></div>
-                                                    </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
-
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 765,300</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="property-item col-md-4 col-xs-6">
-                                            <div class="sunhouse-item"><a href="#" class="wrapper-image"><img src="../../images/houses/house-4.jpg" alt="" class="img-responsive layout-1"/><img src="../../images/houses/house-10.jpg" alt="" class="img-responsive layout-2"/></a>
-
-                                                <div class="note for-rent"><p class="text">for rent</p></div>
-                                                <div class="wrapper-content">
-                                                    <div class="info-house grd-item">
-                                                        <div class="info"><i class="icon-house_1"></i>
-
-                                                            <p>12,000 Sq Ft</p></div>
-                                                        <div class="info"><i class="icon-bed"></i>
-
-                                                            <p>3 bedroom</p></div>
-                                                        <div class="info"><i class="icon-bath"></i>
-
-                                                            <p>2 bathroom</p></div>
-                                                    </div>
-                                                    <div class="about-house"><a href="#" class="title">Trentino-Alto Adige</a>
-
-                                                        <div class="lst-item nodisplay">
-                                                            <div class="info-house">
-                                                                <div class="info"><i class="icon-house_1"></i>
-
-                                                                    <p>12,000 Sq Ft</p></div>
-                                                                <div class="info"><i class="icon-bed"></i>
-
-                                                                    <p>3 bedroom</p></div>
-                                                                <div class="info"><i class="icon-bath"></i>
-
-                                                                    <p>2 bathroom</p></div>
-                                                            </div>
-                                                            <div class="more-info-house">
-                                                                <div class="place-house"><i class="fa fa-map-marker"></i><a href="#">568 E 1st Ave, New Jersey</a></div>
-                                                                <div class="price">$ 765,300</div>
-                                                            </div>
-                                                        </div>
-                                                        <p class="text">Duis aute irure dolor in repre in voluptate velit es sint cillumor dolore eu fugiat</p></div>
-                                                    <div class="more-info-house grd-item">
-                                                        <div class="place-house"><i class="fa fa-map-marker"></i><a href="search-properties.html">568 E 1st Ave, New Jersey</a></div>
-                                                        <div class="price">$ 980/<span>month</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <ul class="pagination col-md-12">
-                                            <li class="pagi-item disable"><a href="#" class="link-pagination">Previous</a></li>
-                                            <li class="pagi-item active"><a href="#" class="link-pagination">1</a></li>
-                                            <li class="pagi-item"><a href="#" class="link-pagination">2</a></li>
-                                            <li class="pagi-item"><a href="#" class="link-pagination">...</a></li>
-                                            <li class="pagi-item"><a href="#" class="link-pagination">9</a></li>
-                                            <li class="pagi-item"><a href="#" class="link-pagination">10</a></li>
-                                            <li class="pagi-item"><a href="#" class="link-pagination">Next</a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
