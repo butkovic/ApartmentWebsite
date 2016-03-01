@@ -88,13 +88,13 @@
     </div>
 </header>
 <!-- WRAPPER-->
-<div id="wrapper-content"><!-- PAGE WRAPPER-->
+<div id="wrapper-content" th:with="aroom=${room}+'.'+room.text"><!-- PAGE WRAPPER-->
     <div id="page-wrapper"><!-- MAIN CONTENT-->
         <div class="main-content"><!-- CONTENT-->
             <div class="content">
                 <div class="section background-opacity page-title property-detail bg-overlay">
                     <div class="container">
-                        <div class="page-title-wrapper"><!--.page-title-content--><h2 class="captions">friuli-venezia giulia mansion</h2>
+                        <div class="page-title-wrapper"><!--.page-title-content--><h2 class="captions" th:text="#{${aroom}}">friuli-venezia giulia mansion</h2>
                             <ol class="breadcrumb">
                                 <li><a href="index.html">568 E 1st Ave, New Jersey</a></li>
                             </ol>
