@@ -88,15 +88,15 @@
     </div>
 </header>
 <!-- WRAPPER-->
-<div id="wrapper-content" th:with="aroom=${room}+'.'+room.text"><!-- PAGE WRAPPER-->
+<div id="wrapper-content"><!--th:with="aroom=${room}+'.'+room.text"--> <!-- PAGE WRAPPER-->
     <div id="page-wrapper"><!-- MAIN CONTENT-->
         <div class="main-content"><!-- CONTENT-->
             <div class="content">
                 <div class="section background-opacity page-title property-detail bg-overlay">
                     <div class="container">
-                        <div class="page-title-wrapper"><!--.page-title-content--><h2 class="captions" th:text="#{${aroom}}">friuli-venezia giulia mansion</h2>
+                        <div class="page-title-wrapper"><!--.page-title-content--><h2 class="captions" th:text="#{${room}+'.'+room.title}">friuli-venezia giulia mansion</h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.html">568 E 1st Ave, New Jersey</a></li>
+                                <li><a href="index.html" th:text="#{${room}+'.'+room.address}"></a></li>
                             </ol>
                         </div>
                     </div>
@@ -109,22 +109,22 @@
                                     <ul class="detail-nav list-unstyled">
                                         <li class="nav-item on-top-btn active">
                                             <figure><i class="icon-house_1 icon"></i>
-                                                <figcaption>On Top</figcaption>
+                                                <figcaption th:text="#{${room}+'.'+room.on.top}">On Top</figcaption>
                                             </figure>
                                         </li>
                                         <li class="nav-item condition-btn">
                                             <figure><i class="fa fa-file-text-o icon"></i>
-                                                <figcaption>Condition</figcaption>
+                                                <figcaption th:text="#{${room}+'.'+room.condition}" >Condition</figcaption>
                                             </figure>
                                         </li>
                                         <li class="nav-item description-btn">
                                             <figure><i class="fa fa-comment-o icon"></i>
-                                                <figcaption>Description</figcaption>
+                                                <figcaption th:text="#{${room}+'.'+room.description}">Description</figcaption>
                                             </figure>
                                         </li>
                                         <li class="nav-item location-btn">
                                             <figure><i class="fa fa-map-marker icon"></i>
-                                                <figcaption>Location</figcaption>
+                                                <figcaption th:text="#{${room}+'.'+room.location}">Location</figcaption>
                                             </figure>
                                         </li>
                                     </ul>
@@ -139,19 +139,19 @@
                             <div class="col-md-8 detail-content">
                                 <div class="property-info">
                                     <div class="info">
-                                        <div class="model"><i class="fa fa-home"></i><span>Mansion</span></div>
+                                        <div class="model"><i class="fa fa-home"></i><span th:text="#{${room}+'.'+room.type}">Mansion</span></div>
                                     </div>
                                     <div class="info">
-                                        <div class="type"><i class="fa fa-align-justify"></i><span>sale</span></div>
+                                        <div class="type"><i class="fa fa-align-justify"></i><span th:text="#{${room}+'.'+room.rent}">sale</span></div>
                                     </div>
                                     <div class="info">
-                                        <div class="price"><i class="fa fa-money"></i><span class="price-num">$&nbsp;4,235,400</span></div>
+                                        <div class="price"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price'}">$&nbsp;4,235,400</span></div>
                                     </div>
                                     <div class="info">
-                                        <div class="acr"><i class="fa fa-arrows-alt"></i><span>65,156 sq</span></div>
+                                        <div class="acr"><i class="fa fa-arrows-alt"></i><span th:text="#{'homepage.section2.room'+${room}+'.surface'}">65,156 sq</span><sup>2</sup></div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 title">image gallery</div>
+                                <div class="col-md-12 title" th:text="#{room.image.gallery}">image gallery</div>
                                 <div class="row gallery">
                                     <div class="col-md-12 gallery-item">
                                         <div class="gallery-slider">
@@ -175,22 +175,22 @@
                                 <div class="col-md-12 title">condition</div>
                                 <ul id="condition" class="list-unstyled list-inline condition">
                                     <li class="condition-item">
-                                        <div class="info"><i class="icon-bed"></i><span>3 bedrooms</span></div>
+                                        <div class="info"><i class="icon-bed"></i><span th:text="#{'homepage.section2.room'+${room}+'.number.of.bedrooms'}">3 bedrooms</span></div>
                                     </li>
                                     <li class="condition-item">
-                                        <div class="info"><i class="icon-bath"></i><span>2 bathrooms</span></div>
+                                        <div class="info"><i class="icon-bath"></i><span th:text="#{'homepage.section2.room'+${room}+'.number.of.bathrooms'}">2 bathrooms</span></div>
                                     </li>
                                     <li class="condition-item">
                                         <div class="info"><i class="icon-house_1"></i><span>1 Garage</span></div>
                                     </li>
                                     <li class="condition-item">
-                                        <div class="info"><i class="fa fa-arrows-alt"></i><span>65,156 sq</span></div>
+                                        <div class="info"><i class="fa fa-arrows-alt"></i><span th:text="#{'homepage.section2.room'+${room}+'.surface'}">65,156 sq</span></div>
                                     </li>
                                     <li class="condition-item">
-                                        <div class="info"><i class="fa fa-money"></i><span class="price-num">4,235,400</span></div>
+                                        <div class="info"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price'}">4,235,400</span></div>
                                     </li>
                                     <li class="condition-item">
-                                        <div class="info"><i class="fa fa-map-marker icon"></i><span>New Jersey</span></div>
+                                        <div class="info"><i class="fa fa-map-marker icon"></i><span th:text="#{'homepage.section2.room'+${room}+'.location'}">New Jersey</span></div>
                                     </li>
                                     <li class="clearfix"></li>
                                 </ul>
