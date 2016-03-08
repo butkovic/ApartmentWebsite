@@ -109,22 +109,22 @@
                                     <ul class="detail-nav list-unstyled">
                                         <li class="nav-item on-top-btn active">
                                             <figure><i class="icon-house_1 icon"></i>
-                                                <figcaption th:text="#{${room}+'.'+room.on.top}">On Top</figcaption>
+                                                <figcaption th:text="#{room.tab.on.top}">On Top</figcaption>
                                             </figure>
                                         </li>
                                         <li class="nav-item condition-btn">
                                             <figure><i class="fa fa-file-text-o icon"></i>
-                                                <figcaption th:text="#{${room}+'.'+room.condition}" >Condition</figcaption>
+                                                <figcaption th:text="#{room.tab.condition}" >Condition</figcaption>
                                             </figure>
                                         </li>
                                         <li class="nav-item description-btn">
                                             <figure><i class="fa fa-comment-o icon"></i>
-                                                <figcaption th:text="#{${room}+'.'+room.description}">Description</figcaption>
+                                                <figcaption th:text="#{room.tab.description}">Description</figcaption>
                                             </figure>
                                         </li>
                                         <li class="nav-item location-btn">
                                             <figure><i class="fa fa-map-marker icon"></i>
-                                                <figcaption th:text="#{${room}+'.'+room.location}">Location</figcaption>
+                                                <figcaption th:text="#{room.tab.location}">Location</figcaption>
                                             </figure>
                                         </li>
                                     </ul>
@@ -139,16 +139,13 @@
                             <div class="col-md-8 detail-content">
                                 <div class="property-info">
                                     <div class="info">
-                                        <div class="model"><i class="fa fa-home"></i><span th:text="#{${room}+'.'+room.type}">Mansion</span></div>
+                                        <div class="model"><i class="fa fa-home"></i><span th:text="#{room.type}">Mansion</span></div>
                                     </div>
                                     <div class="info">
-                                        <div class="type"><i class="fa fa-align-justify"></i><span th:text="#{${room}+'.'+room.rent}">sale</span></div>
+                                        <div class="type"><i class="fa fa-align-justify"></i><span th:text="#{room.rent}">sale</span></div>
                                     </div>
                                     <div class="info">
-                                        <div class="price"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price'}">$&nbsp;4,235,400</span></div>
-                                    </div>
-                                    <div class="info">
-                                        <div class="acr"><i class="fa fa-arrows-alt"></i><span th:text="#{'homepage.section2.room'+${room}+'.surface'}">65,156 sq</span><sup>2</sup></div>
+                                        <div class="price"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.min'}">4,235,400</span><span>&euro; - </span><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.max'}">4,235,400</span><span>&euro;</span></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 title" th:text="#{room.image.gallery}">image gallery</div>
@@ -184,10 +181,7 @@
                                         <div class="info"><i class="icon-house_1"></i><span>1 Garage</span></div>
                                     </li>
                                     <li class="condition-item">
-                                        <div class="info"><i class="fa fa-arrows-alt"></i><span th:text="#{'homepage.section2.room'+${room}+'.surface'}">65,156 sq</span></div>
-                                    </li>
-                                    <li class="condition-item">
-                                        <div class="info"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price'}">4,235,400</span></div>
+                                        <div class="info"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.min'}">4,235,400</span><span>&euro; - </span><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.max'}">4,235,400</span><span>&euro;</span></div>
                                     </li>
                                     <li class="condition-item">
                                         <div class="info"><i class="fa fa-map-marker icon"></i><span th:text="#{'homepage.section2.room'+${room}+'.location'}">New Jersey</span></div>
@@ -306,11 +300,9 @@
                                 </ul>
                                 <div class="col-md-12 title">description</div>
                                 <div id="description" class="row description">
-                                    <div class="col-md-12 des-text"><p class="text">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</p>
-
-                                        <p class="text">The house is equipped with an old-fashioned kitchen and two modern bathrooms, it also has a cozy living room, three bedrooms, a spacious dining room, a lounge area and a cozy garage. The building is square shaped. The house is fully surrounded by a covered patio.<br/> The second floor is smaller than the first, which allowed for a roof garden on two sides of the house. This floor has roughly the same style as the floor below.</p>
-
-                                        <p class="text">The roof is high and slanted to one side and is covered with grey ceramic tiles. One large chimney pokes out the center of the roof. Large, skylight windows let in plenty of light to the rooms below the roof. </p></div>
+                                    <div class="col-md-12 des-text">
+                                        <p class="text" th:text="#{${room}+'.room.description'}">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4 sidebar margin-top-2">
