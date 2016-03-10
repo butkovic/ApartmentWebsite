@@ -6,7 +6,7 @@
         ['Bondi Beach', -33.9, 151.151, 1]
     ];*/
     var beaches = [
-        ['Bondi Beach', 44.8260995, 13.9260417, 1]
+        ['Bondi Beach', 44.9042793, 13.9575898, 1]
     ];
 
     function setMarkers(map) {
@@ -244,7 +244,7 @@
 
         };
 
-        var map = new google.maps.Map(document.getElementById('map2'), myOptions);
+        var map = new google.maps.Map(document.getElementById('map3'), myOptions);
 
         setMarkers(map);
 
@@ -253,8 +253,8 @@
             lng: 151.151
         });*/
         map.setCenter({
-                    lat: 44.82,
-                    lng: 13.925
+                    lat: 44.9042793,
+                    lng: 13.9575898
                 });
 
 
