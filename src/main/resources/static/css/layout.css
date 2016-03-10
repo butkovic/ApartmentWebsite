@@ -433,7 +433,7 @@ h5 {
 
 .contact-us {
     min-height: 650px;
-    background-image: url(../images/libs/banner-contact.jpg);
+    background-image: url("../picture/Medulin2.jpg");
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center;

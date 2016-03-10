@@ -44,7 +44,7 @@
                         </ul>
                     </li>
                     <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
-                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
+                    <li><a href="contact" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
                 <!--<div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
@@ -262,7 +262,7 @@
                     <div class="banner-sale-off">
                         <div class="banner-sale-off-background">
                             <div class="background-gray"></div>
-                            <div class="background-glass"><img src="../../images/libs/background-glass.png" alt="" class="img-responsive"/></div>
+                            <div class="background-glass"><img src="../../picture/1.10" alt="" class="img-responsive"/></div>
                             <div data-wow-delay="0.25s" data-wow-duration="0.8s" class="background-house wow fadeInUp"><img src="../../images/libs/background-house-1.png" alt="" class="img-responsive"/></div>
                         </div>
                         <div class="container">
@@ -459,15 +459,15 @@
                         </div>
                         <div class="container">
                             <div data-parallax="{&quot;y&quot;:&quot;20%&quot;}" class="banner-sale-off-wrapper">
-                                <div class="name-house"><h2 class="title">House Marija - Valtura</h2>
+                                <div class="name-house"><h2 class="title" th:text="#{homepage.banner2.title}">House Marija - Valtura</h2>
 
-                                    <p class="description">Modern, innovation, beautiful</p></div>
+                                    <p class="description" th:text="#{homepage.banner2.description}">Modern, innovation, beautiful</p></div>
                                 <div class="price-house">
                                     <div class="price-for-house">
-                                        <div class="price"><sup>$</sup><span class="amount">369</span><span class="small amount">,999</span></div>
-                                        <div class="sub-price">Per month</div>
+                                        <div class="price"><sup>€</sup><span class="amount" th:text="#{homepage.banner2.price}">369</span>,<span class="small amount" th:text="#{homepage.banner2.price.decimal}">,999</span></div>
+                                        <div class="sub-price" th:text="#{homepage.banner2.duration}">Per month</div>
                                     </div>
-                                    <a href="property-detail-5" class="btn btn-transparent white">detail</a></div>
+                                    <a href="property-detail-5" class="btn btn-transparent white" th:text="#{homepage.banner2.button}">detail</a></div>
                             </div>
                         </div>
                     </div>
