@@ -46,9 +46,9 @@
                     <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
                     <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
-                <div class="topbar-right pull-right">
+                <!--<div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="header-main header-default">
@@ -94,9 +94,9 @@
             <div class="content">
                 <div class="section background-opacity page-title property-detail bg-overlay">
                     <div class="container">
-                        <div class="page-title-wrapper"><!--.page-title-content--><h2 class="captions" th:text="#{${room}+'.'+room.title}">friuli-venezia giulia mansion</h2>
+                        <div class="page-title-wrapper"><!--.page-title-content--><h2 class="captions" th:text="#{'homepage.section2.room'+${room}+'.title'}">friuli-venezia giulia mansion</h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.html" th:text="#{${room}+'.'+room.address}"></a></li>
+                                <li><a href="index.html" th:text="#{'homepage.section2.room'+${room}+'.location'}"></a></li>
                             </ol>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 title">condition</div>
+                                <div class="col-md-12 title" th:text="#{room.subtitle.condition}">condition</div>
                                 <ul id="condition" class="list-unstyled list-inline condition">
                                     <li class="condition-item">
                                         <div class="info"><i class="icon-bed"></i><span th:text="#{'homepage.section2.room'+${room}+'.number.of.bedrooms'}">3 bedrooms</span></div>
@@ -250,7 +250,10 @@
                                         <div class="info"><i class="icon-bath"></i><span th:text="#{'homepage.section2.room'+${room}+'.number.of.bathrooms'}">2 bathrooms</span></div>
                                     </li>
                                     <li class="condition-item">
-                                        <div class="info"><i class="icon-house_1"></i><span>1 Garage</span></div>
+                                        <div class="info"><i class="icon-house_1"></i><span th:text="#{'homepage.section2.room'+${room}+'.number.of.bed'}">1 Garage</span></div>
+                                    </li>
+                                    <li class="condition-item">
+                                        <div class="info"><i class="icon-house_1"></i><span th:text="#{homepage.section2.room.parking}">1 Garage</span></div>
                                     </li>
                                     <li class="condition-item">
                                         <div class="info"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.min'}">4,235,400</span><span>&euro; - </span><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.max'}">4,235,400</span><span>&euro;</span></div>
@@ -260,7 +263,7 @@
                                     </li>
                                     <li class="clearfix"></li>
                                 </ul>
-                                <div class="col-md-12 title">amenities</div>
+                                <div class="col-md-12 title" th:text="#{room.subtitle.amenities}">amenities</div>
                                 <ul class="list-unstyled list-inline amenities">
                                     <li class="amenities-item" th:with="AirCon=${room}+'.'+room.item.air.conditioning" th:switch="#{${AirCon}}">
                                         <span th:case="1"><i class="fa fa-check-square"></i></span>
@@ -370,75 +373,208 @@
                                     <li class="amenities-item"><i class="fa fa-check-square"></i><span>Internet</span></li>
                                     <li class="amenities-item"><i class="fa fa-check-square"></i><span>Toaster</span></li>-->
                                 </ul>
-                                <div class="col-md-12 title">description</div>
+                                <div class="col-md-12 title" th:text="#{room.subtitle.description}">description</div>
                                 <div id="description" class="row description">
                                     <div class="col-md-12 des-text">
                                         <p class="text" th:text="#{${room}+'.room.description'}">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</p>
                                     </div>
                                 </div>
+                                <div class="col-md-12 title">nearest...</div>
+                                <div th:switch="${room}">
+                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="1">
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.airport}">Airport</strong><div style="float: right;" th:text="#{location.airport.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.bar}">Barpub</strong><div style="float: right;" th:text="#{location.bar.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.ferry.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.golf}">Golf</strong><div style="float: right;" th:text="#{location.golf.dist}">15 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.train}">Train</strong><div style="float: right;" th:text="#{location.train.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.motorway.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.restaurant.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.beach}">Beach</strong><div style="float: right;" th:text="#{location.beach.dist}">300 Meters</div>
+                                        </li>
+                                    </ul>
+                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="2">
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.airport}">Airport</strong><div style="float: right;" th:text="#{location.airport.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.bar}">Barpub</strong><div style="float: right;" th:text="#{location.bar.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.ferry.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.golf}">Golf</strong><div style="float: right;" th:text="#{location.golf.dist}">15 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.train}">Train</strong><div style="float: right;" th:text="#{location.train.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.motorway.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.restaurant.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.beach}">Beach</strong><div style="float: right;" th:text="#{location.beach.dist}">300 Meters</div>
+                                        </li>
+                                    </ul>
+                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="3">
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.airport}">Airport</strong><div style="float: right;" th:text="#{location.airport.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.bar}">Barpub</strong><div style="float: right;" th:text="#{location.bar.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.ferry.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.golf}">Golf</strong><div style="float: right;" th:text="#{location.golf.dist}">15 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.train}">Train</strong><div style="float: right;" th:text="#{location.train.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.motorway.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.restaurant.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.beach}">Beach</strong><div style="float: right;" th:text="#{location.beach.dist}">300 Meters</div>
+                                        </li>
+                                    </ul>
+                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="4">
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.airport}">Airport</strong><div style="float: right;" th:text="#{location.airport.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.bar}">Barpub</strong><div style="float: right;" th:text="#{location.bar.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.ferry.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.golf}">Golf</strong><div style="float: right;" th:text="#{location.golf.dist}">15 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.train}">Train</strong><div style="float: right;" th:text="#{location.train.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.motorway.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.restaurant.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.beach}">Beach</strong><div style="float: right;" th:text="#{location.beach.dist}">300 Meters</div>
+                                        </li>
+                                    </ul>
+                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="5">
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.valtura.airport}">Airport</strong><div style="float: right;" th:text="#{location.valtura.airport.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.valtura.bar}">Barpub</strong><div style="float: right;" th:text="#{location.valtura.bar.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.valtura.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.valtura.ferry.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.valtura.golf}">Golf</strong><div style="float: right;" th:text="#{location.valtura.golf.dist}">15 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.valtura.train}">Train</strong><div style="float: right;" th:text="#{location.valtura.train.dist}">8 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.valtura.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.valtura.motorway.dist}">10 Kilometers</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.valtura.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.valtura.restaurant.dist}">500 Meters</div>
+                                        </li>
+                                        <li class="condition-item">
+                                            <strong th:text="#{location.valtura.beach}">Beach</strong><div style="float: right;" th:text="#{location.valtura.beach.dist}">300 Meters</div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+
                             <div class="col-md-4 sidebar margin-top-2" style="top:0px;">
                                 <div class="feature-widget widget">
-                                    <div class="title-widget">featured properties</div>
+                                    <div class="title-widget" th:text="#{room.subtitle.featured.properties}">featured properties</div>
                                     <div class="content-widget">
                                         <div class="media feature-item"><a href="property-detail-1" class="media-left feature-img"><img src="../../images/feature-1.jpg" alt=""/></a>
 
-                                            <div class="media-right media-middle feature-info"><a href="#" class="media-heading feature-title">Myths vealed</a>
+                                            <div class="media-right media-middle feature-info"><a href="property-detail-1" class="media-heading feature-title" th:text="#{homepage.section2.room1.title}">Myths vealed</a>
 
                                                 <div class="info">
-                                                    <div class="address"><i class="fa fa-map-marker"></i><span>568 E 1st Ave, New Jersey</span></div>
+                                                    <div class="address"><i class="fa fa-map-marker"></i><span th:text="#{homepage.section2.room1.location}">568 E 1st Ave, New Jersey</span></div>
                                                 </div>
                                                 <div class="info">
-                                                    <div class="price"><span>$&nbsp;2,965,300</span></div>
+                                                    <div class="price"><span th:text="#{homepage.section2.room1.price.min}"></span>&euro; - <span th:text="#{homepage.section2.room1.price.max}"></span>&euro; / <span th:text="#{homepage.section2.room1.duration}"></span></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="media feature-item"><a href="property-detail-2" class="media-left feature-img"><img src="../../images/feature-2.jpg" alt=""/></a>
 
-                                            <div class="media-right media-middle feature-info"><a href="#" class="media-heading feature-title">
-                                                Casa Bianca</a>
+                                            <div class="media-right media-middle feature-info"><a href="property-detail-2" class="media-heading feature-title"  th:text="#{homepage.section2.room2.title}">Casa Bianca</a>
 
                                                 <div class="info">
-                                                    <div class="address"><i class="fa fa-map-marker"></i><span>568 E 1st Ave, New Jersey</span></div>
+                                                    <div class="address"><i class="fa fa-map-marker"></i><span th:text="#{homepage.section2.room2.location}">568 E 1st Ave, New Jersey</span></div>
                                                 </div>
                                                 <div class="info">
-                                                    <div class="price"><span>$&nbsp;3,850</span><span class="price-of-rent">/month</span></div>
+                                                    <div class="price"><span th:text="#{homepage.section2.room2.price.min}"></span>&euro; - <span th:text="#{homepage.section2.room2.price.max}"></span>&euro; / <span th:text="#{homepage.section2.room2.duration}"></span></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="media feature-item"><a href="property-detail-3" class="media-left feature-img"><img src="../../images/feature-3.jpg" alt=""/></a>
 
-                                            <div class="media-right media-middle feature-info"><a href="#" class="media-heading feature-title">Tricklebrook</a>
+                                            <div class="media-right media-middle feature-info"><a href="property-detail-3" class="media-heading feature-title" th:text="#{homepage.section2.room3.title}">Tricklebrook</a>
 
                                                 <div class="info">
-                                                    <div class="address"><i class="fa fa-map-marker"></i><span>568 E 1st Ave, New Jersey</span></div>
+                                                    <div class="address"><i class="fa fa-map-marker"></i><span th:text="#{homepage.section2.room3.location}">568 E 1st Ave, New Jersey</span></div>
                                                 </div>
                                                 <div class="info">
-                                                    <div class="price"><span>$&nbsp;6,500,000</span></div>
+                                                    <div class="price"><span th:text="#{homepage.section2.room3.price.min}"></span>&euro; - <span th:text="#{homepage.section2.room3.price.max}"></span>&euro; / <span th:text="#{homepage.section2.room3.duration}"></span></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="media feature-item"><a href="property-detail-4" class="media-left feature-img"><img src="../../images/feature-1.jpg" alt=""/></a>
 
-                                            <div class="media-right media-middle feature-info"><a href="#" class="media-heading feature-title">Myths vealed</a>
+                                            <div class="media-right media-middle feature-info"><a href="property-detail-4" class="media-heading feature-title" th:text="#{homepage.section2.room4.title}">Myths vealed</a>
 
                                                 <div class="info">
-                                                    <div class="address"><i class="fa fa-map-marker"></i><span>568 E 1st Ave, New Jersey</span></div>
+                                                    <div class="address"><i class="fa fa-map-marker"></i><span th:text="#{homepage.section2.room4.location}">568 E 1st Ave, New Jersey</span></div>
                                                 </div>
                                                 <div class="info">
-                                                    <div class="price"><span>$&nbsp;2,965,300</span></div>
+                                                    <div class="price"><span th:text="#{homepage.section2.room4.price.min}"></span>&euro; - <span th:text="#{homepage.section2.room4.price.max}"></span>&euro; / <span th:text="#{homepage.section2.room4.duration}"></span></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="media feature-item"><a href="property-detail-5" class="media-left feature-img"><img src="../../images/feature-1.jpg" alt=""/></a>
 
-                                            <div class="media-right media-middle feature-info"><a href="#" class="media-heading feature-title">Myths vealed</a>
+                                            <div class="media-right media-middle feature-info"><a href="property-detail-5" class="media-heading feature-title" th:text="#{homepage.section2.room5.title}">Myths vealed</a>
 
                                                 <div class="info">
-                                                    <div class="address"><i class="fa fa-map-marker"></i><span>568 E 1st Ave, New Jersey</span></div>
+                                                    <div class="address"><i class="fa fa-map-marker"></i><span th:text="#{homepage.section2.room5.location}">568 E 1st Ave, New Jersey</span></div>
                                                 </div>
                                                 <div class="info">
-                                                    <div class="price"><span>$&nbsp;2,965,300</span></div>
+                                                    <div class="price"><span th:text="#{homepage.section2.room5.price.min}"></span>&euro; - <span th:text="#{homepage.section2.room5.price.max}"></span>&euro; / <span th:text="#{homepage.section2.room5.duration}"></span></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -608,7 +744,7 @@
 <!-- MAIN JS-->
 <script src="../../js/main.js"></script>
 <!-- LOADING SCRIPTS FOR PAGE--></body>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6tm60TzeUo9rWpLnrQ7mrFn4JPMVje4&amp;amp;sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6tm60TzeUo9rWpLnrQ7mrFn4JPMVje4&amp;sensor=false"></script>
 <script src="../../js/pages/contact.js"></script>
 <script src="../../js/pages/contact-1.js"></script>
 <script src="../../js/pages/property-detail.js"></script>
