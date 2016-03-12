@@ -378,6 +378,12 @@
                                     <div class="col-md-12 des-text">
                                         <p class="text" th:text="#{${room}+'.room.description'}">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</p>
                                     </div>
+                                    <div class="col-md-12 des-text">
+                                        <p><span><strong th:text="#{room.description.suitability}"></strong></span> <span class="text" th:text="#{${room}+'.room.description.2'}">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</span></p>
+                                    </div>
+                                    <div class="col-md-12 des-text" th:if="${room}==5">
+                                        <p><span><strong th:text="#{5.room.description.3}"></strong></span> <span class="text" th:text="#{${room}+'.room.description.4'}">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</span></p>
+                                    </div>
                                 </div>
                                 <div class="col-md-12 title">nearest...</div>
                                 <div th:switch="${room}">
