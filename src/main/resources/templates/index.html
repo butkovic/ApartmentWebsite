@@ -43,7 +43,7 @@
                             <li><a href="?lang=de">Deutsch</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
+                    <li><a href="contact" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
                     <li><a href="contact" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
                 <!--<div class="topbar-right pull-right">
@@ -55,8 +55,8 @@
             <div class="container">
                 <div class="header-main-wrapper">
                     <div class="navbar-header">
-                        <div class="logo logo-black"><a href="index.html" class="header-logo"><img src="../../images/logo-1.png" alt=""/></a></div>
-                        <div class="logo logo-white"><a href="index.html" class="header-logo"><img src="../../images/logo-2.png" alt=""/></a></div>
+                        <!--<div class="logo logo-black"><a href="index.html" class="header-logo"><img src="../../images/logo-1.png" alt=""/></a></div>-->
+                        <div class="logo logo-white"><!--<a href="index.html" class="header-logo">--><img src="../../images/logo-2.png" alt=""/></div>
                         <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <nav class="navigation collapse navbar-collapse">
@@ -66,13 +66,8 @@
 
                             <li><a href="/properties" class="main-menu" th:text="#{header.navbar.tab2.property}"></a></li>
 
-                            <li class="dropdown">
-                                <a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab3.blog}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
-                                <ul class="dropdown-menu dropdown-menu-1">
-                                    <li><a href="/blog" class="link-page" th:text="#{header.navbar.tab3.1.blog}"></a></li>
-                                    <li><a href="/blog-detail" class="link-page" th:text="#{header.navbar.tab3.2.blog}"></a></li>
-                                </ul>
-                            </li>
+                            <li><a href="/blog" class="main-menu" th:text="#{header.navbar.tab3.blog}"></a></li>
+
                             <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/gallery" class="link-page" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
@@ -108,7 +103,7 @@
                         <div class="container">
                             <div class="about-house-wrapper">
                                 <div class="about-house-image"><img src="../../images/libs/about-home-1.jpg" alt="" class="img-responsive"/></div>
-                                <div class="about-house-content"><h2 class="title" th:text="#{homepage.section1.title}"></h2>
+                                <div class="about-house-content" style="text-align: justify;"><h2 class="title" th:text="#{homepage.section1.title}"></h2>
 
                                     <p class="text" th:text="#{homepage.section1.text1}"></p>
 
@@ -267,7 +262,7 @@
                         </div>
                         <div class="container">
                             <div data-parallax="{&quot;y&quot;:&quot;20%&quot;}" class="banner-sale-off-wrapper">
-                                <div class="name-house"><h2 class="title" th:text="#{homepage.banner1.title}">House Ciceran - Medulin</h2>
+                                <div class="name-house" style="color: #2AACFF"><h2 class="title" style="color: #2AACFF" th:text="#{homepage.banner1.title}">House Ciceran - Medulin</h2>
 
                                     <p class="description" th:text="#{homepage.banner1.description}">Modern, innovation, beautiful</p></div>
                                 <div class="price-house">
@@ -312,7 +307,7 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room1.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="/property-detail-1" th:text="#{homepage.section2.room1.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room1.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room1.price.max}"></span><span>&euro;</span></div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room1.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room1.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room1.duration}"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -338,7 +333,8 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room2.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="/property-detail-2" th:text="#{homepage.section2.room2.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room2.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room2.price.max}"></span><span>&euro;</span></div>                                                    </div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room2.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room2.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room2.duration}"></span></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -363,7 +359,8 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room3.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="/property-detail-3" th:text="#{homepage.section2.room3.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room3.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room3.price.max}"></span><span>&euro;</span></div>                                                    </div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room3.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room3.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room3.duration}"></span></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -388,7 +385,8 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room4.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="/property-detail-4" th:text="#{homepage.section2.room4.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room4.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room4.price.max}"></span><span>&euro;</span></div>                                                    </div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room4.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room4.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room4.duration}"></span></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -413,7 +411,8 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room5.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="/property-detail-5" th:text="#{homepage.section2.room5.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room5.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room5.price.max}"></span><span>&euro;</span></div>                                                    </div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room5.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room5.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room5.duration}"></span></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -459,7 +458,7 @@
                         </div>
                         <div class="container">
                             <div data-parallax="{&quot;y&quot;:&quot;20%&quot;}" class="banner-sale-off-wrapper">
-                                <div class="name-house"><h2 class="title" th:text="#{homepage.banner2.title}">House Marija - Valtura</h2>
+                                <div class="name-house" style="color: #2AACFF"><h2 style="color: #2AACFF" class="title" th:text="#{homepage.banner2.title}">House Marija - Valtura</h2>
 
                                     <p class="description" th:text="#{homepage.banner2.description}">Modern, innovation, beautiful</p></div>
                                 <div class="price-house">
@@ -479,13 +478,12 @@
                     <div class="contact-us">
                         <div class="container">
                             <div data-parallax="{&quot;y&quot;:&quot;20%&quot;}" class="contact-us-scroll">
-                                <div class="contact-us-wrapper">
+                                <div class="contact-us-wrapper" style="background-color: rgba(255,255,255,0.93);">
                                     <div class="contact-us-content"><h2 class="title"><a href="contact/" th:text="#{homepage.contact}"></a></h2>
                                         <div class="info-list">
                                             <ul class="list-unstyled">
                                                 <li class="info-line"><i class="info-icon fa fa-map-marker"></i><a href="contact/" class="info-text" th:text="#{header.navbar.top.address}">1390 Somerset Drive, Raleigh, NC 27603</a></li>
                                                 <li class="info-line"><i class="info-icon fa fa-phone"></i><a href="contact/" class="info-text" th:text="#{header.navbar.top.phone.number}">910-740-0626</a></li>
-                                                <li class="info-line"><i class="info-icon fa fa-fax"></i><a href="contact/" class="info-text" th:text="#{header.navbar.top.fax.number}">910-740-0626</a></li>
                                                 <li class="info-line"><i class="info-icon fa fa-envelope-o"></i><a href="contact/" class="info-text" th:text="#{header.navbar.top.contact.mail}">domain@sunhouse.com</a></li>
                                             </ul>
                                         </div>

@@ -43,8 +43,8 @@
                             <li><a href="?lang=de">Deutsch</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
-                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
+                    <li><a href="contact" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
+                    <li><a href="contact" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
                 <!--<div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
@@ -66,13 +66,8 @@
 
                             <li><a href="/properties" class="main-menu" th:text="#{header.navbar.tab2.property}"></a></li>
 
-                            <li class="dropdown">
-                                <a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab3.blog}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
-                                <ul class="dropdown-menu dropdown-menu-1">
-                                    <li><a href="/blog" class="link-page" th:text="#{header.navbar.tab3.1.blog}"></a></li>
-                                    <li><a href="/blog-detail" class="link-page" th:text="#{header.navbar.tab3.2.blog}"></a></li>
-                                </ul>
-                            </li>
+                            <li><a href="/blog" class="main-menu" th:text="#{header.navbar.tab3.blog}"></a></li>
+
                             <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/gallery" class="link-page" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
@@ -145,7 +140,7 @@
                                         <div class="type"><i class="fa fa-align-justify"></i><span th:text="#{room.rent}">sale</span></div>
                                     </div>
                                     <div class="info">
-                                        <div class="price"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.min'}">4,235,400</span><span>&euro; - </span><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.max'}">4,235,400</span><span>&euro;</span></div>
+                                        <div class="price"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.min'}">4,235,400</span><span>&euro; - </span><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.max'}">4,235,400</span><span>&euro;</span> / <span th:text="#{'homepage.section2.room'+${room}+'.duration'}"></span></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12 title" th:text="#{room.image.gallery}">image gallery</div>
@@ -375,13 +370,13 @@
                                 </ul>
                                 <div class="col-md-12 title" th:text="#{room.subtitle.description}">description</div>
                                 <div id="description" class="row description">
-                                    <div class="col-md-12 des-text">
+                                    <div class="col-md-12 des-text" style="text-align: justify;">
                                         <p class="text" th:text="#{${room}+'.room.description'}">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</p>
                                     </div>
-                                    <div class="col-md-12 des-text">
+                                    <div class="col-md-12 des-text" style="text-align: justify;">
                                         <p><span><strong th:text="#{room.description.suitability}"></strong></span> <span class="text" th:text="#{${room}+'.room.description.2'}">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</span></p>
                                     </div>
-                                    <div class="col-md-12 des-text" th:if="${room}==5">
+                                    <div class="col-md-12 des-text" th:if="${room}==5" style="text-align: justify;">
                                         <p><span><strong th:text="#{5.room.description.3}"></strong></span> <span class="text" th:text="#{${room}+'.room.description.4'}">From the outside this house looks nice and traditional, it has been built with white pine wood and has burgandy brick decorations. Tall, large windows allow enough light to enter the home and have been added to the house in a fairly symmetrical pattern.</span></p>
                                     </div>
                                 </div>

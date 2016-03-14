@@ -42,8 +42,8 @@
                             <li><a href="?lang=de">Deutsch</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
-                    <li><a href="#" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
+                    <li><a href="contact" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
+                    <li><a href="contact" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
                 <!--<div class="topbar-right pull-right">
                     <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
@@ -65,12 +65,8 @@
 
                             <li><a href="/properties" class="main-menu" th:text="#{header.navbar.tab2.property}"></a></li>
 
-                            <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab3.blog}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
-                                <ul class="dropdown-menu dropdown-menu-1">
-                                    <li><a href="/blog" class="link-page" th:text="#{header.navbar.tab3.1.blog}"></a></li>
-                                    <li><a href="/blog-detail" class="link-page" th:text="#{header.navbar.tab3.2.blog}"></a></li>
-                                </ul>
-                            </li>
+                            <li><a href="/blog" class="main-menu" th:text="#{header.navbar.tab3.blog}"></a></li>
+
                             <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/gallery" class="link-page" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
@@ -245,7 +241,7 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room1.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="#" th:text="#{homepage.section2.room1.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room1.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room1.price.max}"></span><span>&euro;</span></div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room1.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room1.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room1.duration}"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -271,7 +267,7 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room2.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="#" th:text="#{homepage.section2.room2.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room2.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room2.price.max}"></span><span>&euro;</span></div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room2.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room2.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room2.duration}"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -297,7 +293,7 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room3.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="#" th:text="#{homepage.section2.room3.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room3.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room3.price.max}"></span><span>&euro;</span></div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room3.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room3.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room3.duration}"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -323,7 +319,7 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room4.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="#" th:text="#{homepage.section2.room4.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room4.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room4.price.max}"></span><span>&euro;</span></div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room4.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room4.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room4.duration}"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -349,7 +345,7 @@
                                                         <!--<p class="text" th:text="#{homepage.section2.room5.subtitle}"></p>--></div>
                                                     <div class="more-info-house">
                                                         <div class="place-house"><i class="fa fa-map-marker"></i><a href="#" th:text="#{homepage.section2.room5.location}">120 2nd Ave, New handiee</a></div>
-                                                        <div class="price"><span th:text="#{homepage.section2.room5.price.min}"></span><span>&euro; - </span><span th:text="#{homepage.section2.room5.price.max}"></span><span>&euro;</span></div>
+                                                        <div class="price"><strong th:text="#{homepage.section2.room5.price.min}"></strong>&euro; - <strong th:text="#{homepage.section2.room5.price.max}"></strong>&euro; <span>/</span><span th:text="#{homepage.section2.room5.duration}"></span></div>
                                                     </div>
                                                 </div>
                                             </div>
