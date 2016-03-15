@@ -2808,7 +2808,8 @@ textarea.contact-form {
 }
 
 .page-title.blog.bg-overlay:before {
-    background-color: rgba(52, 73, 94, 0.3)
+    /*background-color: rgba(52, 73, 94, 0.3)*/
+    background-image: url("../../picture/blog_background.jpg")
 }
 
 .page-title.blog-detail {
