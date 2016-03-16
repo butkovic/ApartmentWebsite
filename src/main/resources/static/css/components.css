@@ -2751,7 +2751,7 @@ textarea.contact-form {
 }
 
 .page-title.property-view {
-    background-image: url("../images/libs/property-view-2.jpg")
+    background-image: url("../../picture/basic/house.jpg")
 }
 
 .page-title.property-view.bg-overlay:before {
@@ -2759,7 +2759,7 @@ textarea.contact-form {
 }
 
 .page-title.property-detail {
-    background-image: url("../images/libs/property-detail.jpg")
+    background-image: url("../../picture/basic/parking.jpg")
 }
 
 .page-title.property-detail.bg-overlay:before {
