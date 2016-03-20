@@ -5,9 +5,9 @@
     /*var beaches = [
         ['Bondi Beach', -33.9, 151.151, 1]
     ];*/
-    var beaches = [
+    /*var beaches = [
         ['Bondi Beach', 44.8260995, 13.9260417, 1]
-    ];
+    ];*/
 
     function setMarkers(map) {
         // Adds markers to the map.
@@ -232,7 +232,7 @@
             {name: "Styled Map"});
 
         var myOptions = {
-            zoom: 13,
+            zoom: 12,
             //center: myMap,
             mapTypeControl: true,
             mapTypeId: google.maps.MapTypeId.ROADMAP,

@@ -11,7 +11,13 @@ import org.springframework.ui.Model;
 @Controller
 @RequestMapping("/")
 public class MainController {
-    int room = 0;
+
+    public static final int big_apartment = 1;
+    public static final int small_apartment = 2;
+    public static final int big_apartment_2nd_floor = 3;
+    public static final int small_apartment_2nd_floor = 4;
+    public static final int house_marija = 5;
+
 
     @RequestMapping(method = RequestMethod.GET)
     public String getIndexView(){
@@ -56,32 +62,32 @@ public class MainController {
         return "gallery";
     }
 
-    /*@RequestMapping(value = "/property-detail-1", method = RequestMethod.GET)
-    public String getPropertyDetail1View(){ return "property-detail-1"; }
+    /*@RequestMapping(value = "/big_apartment", method = RequestMethod.GET)
+    public String getPropertyDetail1View(){ return "big_apartment"; }
     */
-    @RequestMapping(value = "/property-detail-1", method = RequestMethod.GET)
-    public String getRoomDetail1View(@RequestParam(value="room", required=false, defaultValue="1") String room, Model model) {
-        model.addAttribute("room", room);
-        return "property-detail-1";
+    @RequestMapping(value = "/big_apartment", method = RequestMethod.GET)
+    public String getRoomDetail1View(Model model) {
+        model.addAttribute("room", big_apartment);
+        return "big_apartment";
     }
-    @RequestMapping(value = "/property-detail-2", method = RequestMethod.GET)
-    public String getRoomDetail2View(@RequestParam(value="room", required=false, defaultValue="2") String room, Model model) {
-        model.addAttribute("room", room);
-        return "property-detail-1";
+    @RequestMapping(value = "/small_apartment", method = RequestMethod.GET)
+    public String getRoomDetail2View(Model model) {
+        model.addAttribute("room", small_apartment);
+        return "small_apartment";
     }
-    @RequestMapping(value = "/property-detail-3", method = RequestMethod.GET)
-    public String getRoomDetail3View(@RequestParam(value="room", required=false, defaultValue="3") String room, Model model) {
-        model.addAttribute("room", room);
-        return "property-detail-1";
+    @RequestMapping(value = "/big_apartment_2nd_floor", method = RequestMethod.GET)
+    public String getRoomDetail3View(Model model) {
+        model.addAttribute("room", big_apartment_2nd_floor);
+        return "big_apartment_2nd_floor";
     }
-    @RequestMapping(value = "/property-detail-4", method = RequestMethod.GET)
-    public String getRoomDetail4View(@RequestParam(value="room", required=false, defaultValue="4") String room, Model model) {
-        model.addAttribute("room", room);
-        return "property-detail-1";
+    @RequestMapping(value = "/small_apartment_2nd_floor", method = RequestMethod.GET)
+    public String getRoomDetail4View(Model model) {
+        model.addAttribute("room", small_apartment_2nd_floor);
+        return "small_apartment_2nd_floor";
     }
-    @RequestMapping(value = "/property-detail-5", method = RequestMethod.GET)
-    public String getRoomDetail5View(@RequestParam(value="room", required=false, defaultValue="5") String room, Model model) {
-        model.addAttribute("room", room);
-        return "property-detail-1";
+    @RequestMapping(value = "/house_marija", method = RequestMethod.GET)
+    public String getRoomDetail5View(Model model) {
+        model.addAttribute("room", house_marija);
+        return "house_marija";
     }
 }

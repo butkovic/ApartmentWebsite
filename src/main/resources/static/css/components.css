@@ -1326,6 +1326,17 @@ textarea.contact-form {
     width: 40%
 }
 
+.banner-sale-off .banner-sale-off-background .background-house-2 {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    position: absolute;
+    left: 5%;
+    bottom: 50px;
+    max-width: 475px;
+    z-index: 2;
+    width: 40%
+}
+
 .banner-sale-off .banner-sale-off-background .background-house img {
     width: 100%
 }
@@ -1802,6 +1813,13 @@ textarea.contact-form {
 }
 
 .about-house-section .about-house-content {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 70px
+}
+
+.about-house-section .about-house-content-2 {
+    text-align: justify;
     display: table-cell;
     vertical-align: top;
     padding-left: 70px
@@ -2760,6 +2778,10 @@ textarea.contact-form {
 
 .page-title.property-detail {
     background-image: url("../../picture/basic/parking.jpg")
+}
+
+.page-title.property-detail-2 {
+    background-image: url("../../picture/basic/levan.jpg")
 }
 
 .page-title.property-detail.bg-overlay:before {

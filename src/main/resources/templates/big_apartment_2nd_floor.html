@@ -27,7 +27,11 @@
     <link type="text/css" rel="stylesheet" href="../../css/layout.css" th:href="@{/css/layout.css}"/>
     <link type="text/css" rel="stylesheet" href="../../css/components.css" th:href="@{/css/components.css}"/>
     <link type="text/css" rel="stylesheet" href="../../css/responsive.css" th:href="@{/css/responsive.css}"/>
-
+    <script>
+    var beaches = [
+    ['Bondi Beach', 44.8260995, 13.9260417, 1]
+    ];
+    </script>
     <!-- LOADING SCRIPTS FOR PAGE-->
 </head>
 <body><!-- HEADER-->
@@ -141,46 +145,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 title" th:text="#{room.image.gallery}">image gallery</div>
-                                <div class="row gallery" th:switch="${room}">
-                                    <div class="col-md-12 gallery-item" th:case="1"><!-- Big Ground apartment -->
-                                        <div class="gallery-slider" >
-                                            <div class="slider-item"><img src="../../picture/room1/garden.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room1/garden1.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room1/garden2.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room1/living-room.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room1/kitchen.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room1/bathroom.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room1/bedroom.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room1/bedroom1.jpg" alt=""/></div>
-                                        </div>
-                                        <div class="slider-nav">
-                                            <div class="slider-nav-wrapper">
-                                                <div class="slider-nav-item"><img src="../../picture/room1/garden.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room1/garden1.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room1/garden2.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room1/living-room.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room1/kitchen.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room1/bathroom.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room1/bedroom.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room1/bedroom1.jpg" alt=""/></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 gallery-item" th:case="2"><!-- Small Ground apartment -->
-                                        <div class="gallery-slider" >
-                                            <div class="slider-item"><img src="../../picture/room2/kitchen.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room2/bedroom.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room2/garden.jpg" alt=""/></div>
-                                        </div>
-                                        <div class="slider-nav">
-                                            <div class="slider-nav-wrapper">
-                                                <div class="slider-nav-item"><img src="../../picture/room2/kitchen.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room2/bedroom.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room2/garden.jpg" alt=""/></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 gallery-item" th:case="3"><!-- Big top apartment -->
+                                <div class="row gallery">
+
+                                    <div class="col-md-12 gallery-item"><!-- Big top apartment -->
                                         <div class="gallery-slider" >
                                             <div class="slider-item"><img src="../../picture/room3/living-room.jpg" alt=""/></div>
                                             <div class="slider-item"><img src="../../picture/room3/dining.jpg" alt=""/></div>
@@ -204,54 +171,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 gallery-item" th:case="4"><!-- Small top apartment -->
-                                        <div class="gallery-slider" >
-                                            <div class="slider-item"><img src="../../picture/room4/living-room.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room4/kitchen.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room4/balcony.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room4/bedroom.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room4/bathroom.jpg" alt=""/></div>
-                                        </div>
-                                        <div class="slider-nav">
-                                            <div class="slider-nav-wrapper">
-                                                <div class="slider-nav-item"><img src="../../picture/room4/living-room.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room4/kitchen.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room4/balcony.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room4/bedroom.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room4/bathroom.jpg" alt=""/></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 gallery-item" th:case="5"><!-- Valtura -->
-                                        <div class="gallery-slider" >
-                                            <div class="slider-item"><img src="../../picture/room5/garden2.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/terase.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/garden1.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/entrance.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/kitchen.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/living-room.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/living-room1.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/bedroom1.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/bathroom.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/bedroom.jpg" alt=""/></div>
-                                            <div class="slider-item"><img src="../../picture/room5/bedroom2.jpg" alt=""/></div>
-                                        </div>
-                                        <div class="slider-nav">
-                                            <div class="slider-nav-wrapper">
-                                                <div class="slider-nav-item"><img src="../../picture/room5/garden2.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/terase.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/garden1.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/entrance.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/kitchen.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/living-room.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/living-room1.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/bedroom1.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/bathroom.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/bedroom.jpg" alt=""/></div>
-                                                <div class="slider-nav-item"><img src="../../picture/room5/bedroom2.jpg" alt=""/></div>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                                 <div class="col-md-12 title" th:text="#{room.subtitle.condition}">condition</div>
                                 <ul id="condition" class="list-unstyled list-inline condition">
@@ -265,12 +185,8 @@
                                         <div class="info"><i class="icon-house_1"></i><span th:text="#{'homepage.section2.room'+${room}+'.number.of.bed'}">1 Garage</span></div>
                                     </li>
                                     <li class="condition-item">
-                                        <div class="info" th:switch="${room}"><i class="icon-house_1"></i>
-                                            <span th:case="1" th:text="#{homepage.section2.room.parking}">1 Garage</span>
-                                            <span th:case="2" th:text="#{homepage.section2.room.parking}">1 Garage</span>
-                                            <span th:case="3" th:text="#{homepage.section2.room.parking}">1 Garage</span>
-                                            <span th:case="4" th:text="#{homepage.section2.room.parking}">1 Garage</span>
-                                            <span th:case="5" th:text="#{homepage.section2.room.parking.valtura}">1 Garage</span>
+                                        <div class="info"><i class="icon-house_1"></i>
+                                            <span th:text="#{homepage.section2.room.parking}">1 Garage</span>
                                         </div>
                                     </li>
                                     <li class="condition-item">
@@ -387,8 +303,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 title">nearest...</div>
-                                <div th:switch="${room}">
-                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="1">
+                                <div>
+
+                                    <ul id="condition" class="list-unstyled list-inline condition">
                                         <li class="condition-item">
                                             <strong th:text="#{location.airport}">Airport</strong><div style="float: right;" th:text="#{location.airport.dist}">10 Kilometers</div>
                                         </li>
@@ -414,110 +331,7 @@
                                             <strong th:text="#{location.beach}">Beach</strong><div style="float: right;" th:text="#{location.beach.dist}">300 Meters</div>
                                         </li>
                                     </ul>
-                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="2">
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.airport}">Airport</strong><div style="float: right;" th:text="#{location.airport.dist}">10 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.bar}">Barpub</strong><div style="float: right;" th:text="#{location.bar.dist}">500 Meters</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.ferry.dist}">8 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.golf}">Golf</strong><div style="float: right;" th:text="#{location.golf.dist}">15 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.train}">Train</strong><div style="float: right;" th:text="#{location.train.dist}">8 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.motorway.dist}">10 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.restaurant.dist}">500 Meters</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.beach}">Beach</strong><div style="float: right;" th:text="#{location.beach.dist}">300 Meters</div>
-                                        </li>
-                                    </ul>
-                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="3">
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.airport}">Airport</strong><div style="float: right;" th:text="#{location.airport.dist}">10 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.bar}">Barpub</strong><div style="float: right;" th:text="#{location.bar.dist}">500 Meters</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.ferry.dist}">8 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.golf}">Golf</strong><div style="float: right;" th:text="#{location.golf.dist}">15 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.train}">Train</strong><div style="float: right;" th:text="#{location.train.dist}">8 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.motorway.dist}">10 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.restaurant.dist}">500 Meters</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.beach}">Beach</strong><div style="float: right;" th:text="#{location.beach.dist}">300 Meters</div>
-                                        </li>
-                                    </ul>
-                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="4">
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.airport}">Airport</strong><div style="float: right;" th:text="#{location.airport.dist}">10 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.bar}">Barpub</strong><div style="float: right;" th:text="#{location.bar.dist}">500 Meters</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.ferry.dist}">8 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.golf}">Golf</strong><div style="float: right;" th:text="#{location.golf.dist}">15 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.train}">Train</strong><div style="float: right;" th:text="#{location.train.dist}">8 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.motorway.dist}">10 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.restaurant.dist}">500 Meters</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.beach}">Beach</strong><div style="float: right;" th:text="#{location.beach.dist}">300 Meters</div>
-                                        </li>
-                                    </ul>
-                                    <ul id="condition" class="list-unstyled list-inline condition" th:case="5">
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.valtura.airport}">Airport</strong><div style="float: right;" th:text="#{location.valtura.airport.dist}">10 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.valtura.bar}">Barpub</strong><div style="float: right;" th:text="#{location.valtura.bar.dist}">500 Meters</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.valtura.ferry}">Ferry</strong><div style="float: right;" th:text="#{location.valtura.ferry.dist}">8 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.valtura.golf}">Golf</strong><div style="float: right;" th:text="#{location.valtura.golf.dist}">15 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.valtura.train}">Train</strong><div style="float: right;" th:text="#{location.valtura.train.dist}">8 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.valtura.motorway}">Motorway</strong><div style="float: right;" th:text="#{location.valtura.motorway.dist}">10 Kilometers</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.valtura.restaurant}">Restaurant</strong><div style="float: right;" th:text="#{location.valtura.restaurant.dist}">500 Meters</div>
-                                        </li>
-                                        <li class="condition-item">
-                                            <strong th:text="#{location.valtura.beach}">Beach</strong><div style="float: right;" th:text="#{location.valtura.beach.dist}">300 Meters</div>
-                                        </li>
-                                    </ul>
+
                                 </div>
                             </div>
 
@@ -592,13 +406,8 @@
                         </div>
                     </div>
                 </div>
-                <div th:switch="${room}">
-                    <div th:case="1" id="map2" class="section contact-map height-full-screen location"></div>
-                    <div th:case="2" id="map2" class="section contact-map height-full-screen location"></div>
-                    <div th:case="3" id="map2" class="section contact-map height-full-screen location"></div>
-                    <div th:case="4" id="map2" class="section contact-map height-full-screen location"></div>
-                    <div th:case="5" id="map3" class="section contact-map height-full-screen location"></div>
-
+                <div>
+                    <div id="map2" class="section contact-map height-full-screen location"></div>
                 </div>
             </div>
         </div>
@@ -632,6 +441,5 @@
 <!-- LOADING SCRIPTS FOR PAGE--></body>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6tm60TzeUo9rWpLnrQ7mrFn4JPMVje4&amp;sensor=false"></script>
 <script src="../../js/pages/contact.js"></script>
-<script src="../../js/pages/contact-1.js"></script>
 <script src="../../js/pages/property-detail.js"></script>
 </html>
