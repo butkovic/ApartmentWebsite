@@ -62,6 +62,11 @@ public class MainController {
         return "gallery";
     }
 
+    @RequestMapping(value = "/gallery-atraction", method = RequestMethod.GET)
+    public String getGalleryAtractionView(){
+        return "gallery-atraction";
+    }
+
     /*@RequestMapping(value = "/big_apartment", method = RequestMethod.GET)
     public String getPropertyDetail1View(){ return "big_apartment"; }
     */

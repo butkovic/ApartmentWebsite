@@ -2781,7 +2781,11 @@ textarea.contact-form {
 }
 
 .page-title.property-detail-2 {
-    background-image: url("../../picture/basic/levan.jpg")
+    background-image: url("../../picture/room5/garden2.jpg")
+}
+
+.page-title.property-detail-2.bg-overlay:before {
+    background-color: rgba(52, 73, 94, 0.25)
 }
 
 .page-title.property-detail.bg-overlay:before {
