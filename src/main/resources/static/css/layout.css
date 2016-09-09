@@ -85,6 +85,14 @@ h5 {
     transition: all 0.5s ease
 }
 
+.sunhouse-item-gallery {
+    display: block;
+    float: left;
+    position: relative;
+    transition: all 0.5s ease;
+    width: 100%
+}
+
 .sunhouse-item .wrapper-image {
     position: relative;
     display: block

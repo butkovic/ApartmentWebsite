@@ -45,16 +45,13 @@
                     <li><a href="contact" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
                     <li><a href="contact" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
-                <!--<div class="topbar-right pull-right">
-                    <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
-                </div>-->
             </div>
         </div>
         <div class="header-main header-default">
             <div class="container">
                 <div class="header-main-wrapper">
                     <div class="navbar-header">
-                        <div class="logo logo-black pull-left"><a href="index.html" class="header-logo"><img src="../../picture/logo.png" alt=""/></a></div>
+                        <div class="logo logo-black pull-left"><a class="header-logo"><img src="../../picture/logo.png" alt=""/></a></div>
                         <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <nav class="navigation collapse navbar-collapse pull-right">
@@ -89,130 +86,12 @@
                     <div class="container">
                         <div class="page-title-wrapper"><h2 class="captions" th:text="#{properties.title.navbar.title}"></h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.html" th:text="#{properties.title.navbar.home}"></a></li>
+                                <li><a href="/home" th:text="#{properties.title.navbar.home}"></a></li>
                                 <li class="active"><a href="#" th:text="#{properties.title.navbar.properties}"></a></li>
                             </ol>
                         </div>
                     </div>
                 </div>
-                <!--<div class="search-properties bg-gray padding-top padding-bottom">
-                    <div class="container">
-                        <div class="search-properties-wrapper">
-                            <div class="title-search-property">Search For Properties</div>
-                            <div class="search-properties-content">
-                                <form class="search-form row">
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="search-form-group"><label class="title-search-form">keyword</label><input type="text" placeholder="enter your keyword" class="input-form"/></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="search-form-group"><label class="title-search-form">property type</label><select class="input-form selectbox">
-                                            <option value="all type">all type</option>
-                                            <option value="type one">type one</option>
-                                            <option value="type two">type one</option>
-                                        </select></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="search-form-group"><label class="title-search-form">status</label><select class="input-form selectbox">
-                                            <option value="all status">all status</option>
-                                            <option value="status one">status one</option>
-                                            <option value="status two">status two</option>
-                                        </select></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="search-form-group"><label class="title-search-form">location</label><input type="text" placeholder="enter location" class="input-form"/></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="search-form-group"><label class="title-search-form">bedroom</label><select class="input-form selectbox">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="search-form-group"><label class="title-search-form">bathroom</label><select class="input-form selectbox">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select></div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="search-form-group"><label class="title-search-form">area (sq)</label>
-
-                                            <div data-range_min="10" data-range_max="900" data-cur_min="10" data-cur_max="900" class="nstSlider">
-                                                <div class="bar"></div>
-                                                <div class="leftGrip"></div>
-                                                <div class="rightGrip"></div>
-                                            </div>
-                                            <div class="leftLabel"></div>
-                                            <div class="rightLabel"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="search-form-group"><label class="title-search-form">price (.000 $)</label>
-
-                                            <div data-range_min="10" data-range_max="990" data-cur_min="120" data-cur_max="800" class="nstSlider">
-                                                <div class="bar"></div>
-                                                <div class="leftGrip"></div>
-                                                <div class="rightGrip"></div>
-                                            </div>
-                                            <div class="leftLabel"></div>
-                                            <div class="rightLabel"></div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="group-button-search"><a data-toggle="collapse" href=".search-propertie-filters" class="more-filter">
-                                    <div class="text-1">more filter</div>
-                                    <div class="text-2 hide">less filter</div>
-                                    <i class="icon fa fa-angle-down"></i></a>
-
-                                    <div class="btn-search"><a href="search-properties.html" class="btn btn-transparent blue">search properties</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="search-propertie-filters bg-gray collapse">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="air-conditioning" type="checkbox"/><label for="air-conditioning" class="type-checkbox">Air Conditioning</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="pool" type="checkbox" checked="checked"/><label for="pool" class="type-checkbox">pool</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="lift" type="checkbox"/><label for="lift" class="type-checkbox">lift</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="near-school" type="checkbox" checked="checked"/><label for="near-school" class="type-checkbox">near school</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="cable-tv" type="checkbox"/><label for="cable-tv" class="type-checkbox">cable TV</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="dishwasher" type="checkbox"/><label for="dishwasher" class="type-checkbox">Dishwasher</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="near-hospital" type="checkbox"/><label for="near-hospital" class="type-checkbox">near hospital</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="balcony" type="checkbox"/><label for="balcony" class="type-checkbox">Balcony</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="near-church" type="checkbox" checked="checked"/><label for="near-church" class="type-checkbox">near church</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="garages" type="checkbox" checked="checked"/><label for="garages" class="type-checkbox">Garages</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="wi-fi" type="checkbox" checked="checked"/><label for="wi-fi" class="type-checkbox">wi-fi</label></div>
-                            </div>
-                            <div class="col-md-2 col-sm-3 col-xs-4">
-                                <div class="search-form-group"><input id="bedding" type="checkbox" checked="checked"/><label for="bedding" class="type-checkbox">Bedding</label></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
                 <div class="section property-view">
                     <div class="container">
                         <div class="property-wrapper padding-top padding-bottom">

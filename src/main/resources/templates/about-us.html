@@ -55,8 +55,7 @@
             <div class="container">
                 <div class="header-main-wrapper">
                     <div class="navbar-header">
-                        <div class="logo logo-black pull-left"><a href="index.html" class="header-logo"><img src="../../picture/logo.png" alt=""/></a></div>
-                        <div class="logo logo-white pull-left"><a href="index.html" class="header-logo"><img src="../../images/logo-2.png" alt=""/></a></div>
+                        <div class="logo logo-black pull-left"><a class="header-logo"><img src="../../picture/logo.png" alt=""/></a></div>
                         <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <nav class="navigation collapse navbar-collapse pull-right">
@@ -91,8 +90,8 @@
                     <div class="container">
                         <div class="page-title-wrapper"><h2 class="captions">about us</h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active"><a href="#">about us</a></li>
+                                <li><a href="/home" th:text="#{about.title.navbar.home}">Home</a></li>
+                                <li class="active"><a href="#" th:text="#{about.title.navbar.about.us}">about us</a></li>
                             </ol>
                         </div>
                     </div>

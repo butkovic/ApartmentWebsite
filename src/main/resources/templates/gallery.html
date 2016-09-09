@@ -46,9 +46,6 @@
                     <li><a href="contact" class="hotline"><i class="topbar-icon fa fa-phone"></i><span th:text="#{header.navbar.top.phone.number}"></span></a></li>
                     <li><a href="contact" class="email"><i class="topbar-icon fa fa-map-marker"></i><span th:text="#{header.navbar.top.contact.mail}"></span></a></li>
                 </ul>
-                <!--<div class="topbar-right pull-right">
-                    <div class="socials"><a href="#" class="link facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="link twitter"><i class="fa fa-twitter"></i></a><a href="#" class="link pinterest"><i class="fa fa-pinterest"></i></a><a href="#" class="link blog"><i class="fa fa-rss"></i></a><a href="#" class="link instagram"><i class="fa fa-instagram"></i></a><a href="#" class="link dribbble"><i class="fa fa-dribbble"></i></a></div>
-                </div>-->
             </div>
         </div>
         <div class="header-main header-default">
@@ -93,7 +90,7 @@
                     <div class="container">
                         <div class="page-title-wrapper"><h2 class="captions" th:text="#{gallery.title.navbar.title}"></h2>
                             <ol class="breadcrumb">
-                                <li><a href="index.html" th:text="#{gallery.title.navbar.home}"></a></li>
+                                <li><a href="/home" th:text="#{gallery.title.navbar.home}"></a></li>
                                 <li class="active"><a href="#" th:text="#{gallery.title.navbar.gallery}"></a></li>
                             </ol>
                         </div>
@@ -103,16 +100,64 @@
                     <div class="container margin-top">
 
                         <div class="group-title padding-top">
-                            <div id="gallery-title" class="title">all</div>
-                            <div class="des">Quisque euismod mi sit amet aliquet lobortis. Etiam nec magna imperdiet, molestie risus eget, mollis ex. Donec non enim dignissim, dignissim velit sed.</div>
+                            <div id="gallery-title" class="title">This is a title.</div>
+                            <div class="des">This is a description.</div>
                         </div>
-                        <div class="grid">
-                            <div data-category="cottage" class="grid-item cottage"><a href="property-detail.html"><span class="content"><span class="content-title">Small apartment</span><span class="content-address"><i class="fa fa-map-marker">&nbsp;</i><span>335 W 2nd, California</span></span></span><img src="../../images/gallery/gallery-10.jpg" alt=""/></a></div>
-                            <div data-category="bungalow" class="grid-item grid-item-height2 bungalow"><a href="property-detail.html"><span class="content"><span class="content-title">House Marija</span><span class="content-address"><i class="fa fa-map-marker">&nbsp;</i><span>335 W 2nd, California</span></span></span><img src="../../images/gallery/gallery-13.jpg" alt=""/></a></div>
-                            <div data-category="colonial" class="grid-item colonial"><a href="property-detail.html"><span class="content"><span class="content-title">big apartment</span><span class="content-address"><i class="fa fa-map-marker">&nbsp;</i><span>335 W 2nd, California</span></span></span><img src="../../images/gallery/gallery-16.jpg" alt=""/></a></div>
-                            <div data-category="barndominium" class="grid-item barndominium"><a href="property-detail.html"><span class="content"><span class="content-title">big apartment 2nd floor</span><span class="content-address"><i class="fa fa-map-marker">&nbsp;</i><span>335 W 2nd, California</span></span></span><img src="../../images/gallery/gallery-11.jpg" alt=""/></a></div>
-                            <div data-category="longhouse" class="grid-item longhouse apartment"><a href="property-detail.html"><span class="content"><span class="content-title">small apartment 2nd floor</span><span class="content-address"><i class="fa fa-map-marker">&nbsp;</i><span>335 W 2nd, California</span></span></span><img src="../../images/gallery/gallery-17.jpg" alt=""/></a></div>
+                        <div class="sunhouse-item-gallery">
+                            <div class="wrapper-image"><img src="../../picture/basic/beach.jpg" alt="" class="img-responsive" style="width:100%"/></div>
+                            <div class="wrapper-content">
+                                <div class="about-house"><a href="blog-detail.html" class="title">Beach</a>
 
+                                    <p class="text"></p></div>
+                            </div>
+                        </div>
+                        <div class="sunhouse-item-gallery">
+                            <div class="wrapper-image"><img src="../../picture/basic/beach1.jpg" alt="" class="img-responsive" style="width:100%"/></div>
+                            <div class="wrapper-content">
+                                <div class="about-house"><a href="blog-detail.html" class="title">Beach</a>
+
+                                    <p class="text"></p></div>
+                            </div>
+                        </div>
+                        <div class="sunhouse-item-gallery">
+                            <div class="wrapper-image"><img src="../../picture/basic/beach2.jpg" alt="" class="img-responsive" style="width:100%"/></div>
+                            <div class="wrapper-content">
+                                <div class="about-house"><a href="blog-detail.html" class="title">Beach</a>
+
+                                    <p class="text"></p></div>
+                            </div>
+                        </div>
+                        <div class="sunhouse-item-gallery">
+                            <div class="wrapper-image"><img src="../../picture/basic/beach3.jpg" alt="" class="img-responsive" style="width:100%"/></div>
+                            <div class="wrapper-content">
+                                <div class="about-house"><a href="blog-detail.html" class="title">Beach</a>
+
+                                    <p class="text"></p></div>
+                            </div>
+                        </div>
+                        <div class="sunhouse-item-gallery">
+                            <div class="wrapper-image"><img src="../../picture/basic/levan.jpg" alt="" class="img-responsive" style="width:100%"/></div>
+                            <div class="wrapper-content">
+                                <div class="about-house"><a href="blog-detail.html" class="title">Island Levan</a>
+
+                                    <p class="text">Levan is a island near Medulin.</p></div>
+                            </div>
+                        </div>
+                        <div class="sunhouse-item-gallery">
+                            <div class="wrapper-image"><img src="../../picture/basic/owners.jpg" alt="" class="img-responsive" style="width:100%"/></div>
+                            <div class="wrapper-content">
+                                <div class="about-house"><a href="blog-detail.html" class="title">Owners</a>
+
+                                    <p class="text">Polite and hospitable owners.</p></div>
+                            </div>
+                        </div>
+                        <div class="sunhouse-item-gallery">
+                            <div class="wrapper-image"><img src="../../picture/basic/parking.jpg" alt="" class="img-responsive" style="width:100%"/></div>
+                            <div class="wrapper-content">
+                                <div class="about-house"><a href="blog-detail.html" class="title">Parking</a>
+
+                                    <p class="text">Free parking for all guests.</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
