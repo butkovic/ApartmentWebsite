@@ -52,10 +52,7 @@
             <div class="container">
                 <div class="header-main-wrapper">
                     <div class="navbar-header">
-<!--
-                        <div class="logo logo-black pull-left"><a href="index.html" class="header-logo"><img src="../../picture/logo.png" alt=""/></a></div>
--->
-                        <div class="logo logo-white pull-left"><a href="index.html" class="header-logo"><img src="../../images/logo-2.png" alt=""/></a></div>
+                        <div class="logo logo-white pull-left"><a href="index.html" class="header-logo"><img src="../../images/logo.png" alt=""/></a></div>
                         <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <nav class="navigation collapse navbar-collapse pull-right">
@@ -100,63 +97,68 @@
                     <div class="container margin-top">
 
                         <div class="group-title padding-top">
-                            <div id="gallery-title" class="title">This is a title.</div>
-                            <div class="des">This is a description.</div>
+                            <div id="gallery-title" class="title" th:text="#{gallery.section.title}"></div>
+                            <div class="des" th:text="#{gallery.section.description}" ></div>
                         </div>
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/beach.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
-                                <div class="about-house"><a href="blog-detail.html" class="title">Beach</a>
-
-                                    <p class="text"></p></div>
+                                <div class="about-house">
+                                    <p class="title" th:text="#{gallery.picture1.title}"></p>
+                                    <p class="text" th:text="#{gallery.picture1.text}"></p>
+                                </div>
                             </div>
                         </div>
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/beach1.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
-                                <div class="about-house"><a href="blog-detail.html" class="title">Beach</a>
-
-                                    <p class="text"></p></div>
+                                <div class="about-house">
+                                    <p class="title" th:text="#{gallery.picture2.title}"></p>
+                                    <p class="text" th:text="#{gallery.picture2.text}"></p>
+                                </div>
                             </div>
                         </div>
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/beach2.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
-                                <div class="about-house"><a href="blog-detail.html" class="title">Beach</a>
-
-                                    <p class="text"></p></div>
+                                <div class="about-house">
+                                    <p class="title" th:text="#{gallery.picture3.title}"></p>
+                                    <p class="text" th:text="#{gallery.picture3.text}"></p>
+                                </div>
                             </div>
                         </div>
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/beach3.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
-                                <div class="about-house"><a href="blog-detail.html" class="title">Beach</a>
-
-                                    <p class="text"></p></div>
+                                <div class="about-house">
+                                    <p class="title" th:text="#{gallery.picture4.title}"></p>
+                                    <p class="text" th:text="#{gallery.picture4.text}"></p>
+                                </div>
                             </div>
                         </div>
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/levan.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
-                                <div class="about-house"><a href="blog-detail.html" class="title">Island Levan</a>
-
-                                    <p class="text">Levan is a island near Medulin.</p></div>
+                                <div class="about-house">
+                                    <p class="title" th:text="#{gallery.picture5.title}"></p>
+                                    <p class="text" th:text="#{gallery.picture5.text}"></p>
+                                </div>
                             </div>
                         </div>
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/owners.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
-                                <div class="about-house"><a href="blog-detail.html" class="title">Owners</a>
-
-                                    <p class="text">Polite and hospitable owners.</p></div>
+                                <div class="about-house">
+                                    <p class="title" th:text="#{gallery.picture6.title}"></p>
+                                    <p class="text" th:text="#{gallery.picture6.text}"></p></div>
                             </div>
                         </div>
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/parking.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
-                                <div class="about-house"><a href="blog-detail.html" class="title">Parking</a>
-
-                                    <p class="text">Free parking for all guests.</p></div>
+                                <div class="about-house">
+                                    <p class="title" th:text="#{gallery.picture7.title}"></p>
+                                    <p class="text" th:text="#{gallery.picture7.text}"></p></div>
                             </div>
                         </div>
                     </div>
