@@ -3,8 +3,8 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<head><title>Sunhouse | Contact Us</title>
-    <title>Apartment WebSite</title>
+<head>
+    <title th:text="#{page.title}">Apartment WebSite</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -66,12 +66,15 @@
 
                             <li><a href="/blog" class="main-menu" th:text="#{header.navbar.tab3.blog}"></a></li>
 
+                            <!--
                             <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/gallery" class="link-page" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
                                     <li><a href="/about-us" class="link-page" th:text="#{header.navbar.tab4.2.about.us}"></a></li>
                                 </ul>
                             </li>
+                            -->
+                            <li><a href="/gallery" class="main-menu" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
                             <li><a href="/contact" class="main-menu" th:text="#{header.navbar.tab5.contact}"></a></li>
                         </ul>
                     </nav>
@@ -87,21 +90,22 @@
             <div class="content">
                 <div class="section background-opacity page-title blog bg-overlay">
                     <div class="container">
-                        <div class="page-title-wrapper"><h2 class="captions">blog</h2>
+                        <div class="page-title-wrapper"><h2 class="captions" th:text="#{blog.title}"></h2>
                             <ol class="breadcrumb">
-                                <li><a href="/home">Home</a></li>
-                                <li class="active"><a href="#">blog</a></li>
+                                <li><a href="/home" th:text="#{blog.subtitle}"></a></li>
+                                <li class="active"><a href="#" th:text="#{blog.subtitle2}"></a></li>
                             </ol>
                         </div>
                     </div>
                 </div>
                 <div class="section blog">
                     <div class="container">
-                        <div class="blog-wrapper row">
-                            <div class="col-md-8 blog-content padding-top padding-bottom">
+                        <div>
+                            <div class="col-md-8 blog-content padding-top padding-bottom" style="margin-right: auto; margin-left: auto; float: none;">
                                 <div class="sunhouse-item">
                                     <div class="wrapper-image">
                                         <iframe src="https://www.youtube.com/embed/GQeWLXfLdlI" allowfullscreen="allowfullscreen" class="video"></iframe>
+
                                     </div>
                                     <!--<div class="note for-sale for-day"><a href="#" class="text"><span>14</span> DEC <span>2016</span></a></div>-->
                                     <div class="wrapper-content">
@@ -110,9 +114,9 @@
                                             <div class="info"><i class="fa fa-file-o"></i><span class="info-inner">Real Estate, Apartment, Villa</span></div>
                                             <div class="info"><i class="fa fa-comment-o"></i><span class="info-inner">86</span></div>
                                         </div>-->
-                                        <div class="about-house"><a href="blog-detail.html" class="title">What's Wrong with Venture Capital</a>
+                                        <div class="about-house"><a href="blog-detail.html" class="title">What's good in Istria?</a>
 
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam corper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div>
+                                            <p class="text">Relax and watch the video.</p></div>
                                     </div>
                                 </div>
                                 <div class="sunhouse-item">
@@ -120,13 +124,12 @@
                                     <!--<div class="note for-sale for-day"><a href="#" class="text"><span>08</span> JAN <span>2016</span></a></div>-->
                                     <div class="wrapper-content">
                                         <div class="info-house">
-                                            <div class="info"><i class="fa fa-user"></i><span class="info-inner">John Doe</span></div>
-                                            <div class="info"><i class="fa fa-file-o"></i><span class="info-inner">Real Estate, Apartment, Villa</span></div>
-                                            <div class="info"><i class="fa fa-comment-o"></i><span class="info-inner">86</span></div>
+                                            <div class="info"><i class="fa fa-user"></i><span class="info-inner">Danijel Butkovic</span></div>
+                                            <div class="info"><i class="fa fa-file-o"></i><span class="info-inner">Ciceran Apartment, Medulin</span></div>
                                         </div>
-                                        <div class="about-house"><a href="blog-detail.html" class="title">An Open Letter to Real Estate Tech Founders</a>
-
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam corper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p><a href="blog-detail.html" class="btn btn-blue">read more</a></div>
+                                        <div class="about-house">
+                                            <p class="title">Guest comment</p>
+                                            <p class="text">Croatia is very beautifull country. I enjoyed here.</p><a href="blog-detail.html" class="btn btn-blue">read more</a></div>
                                     </div>
                                 </div>
                                 <div class="sunhouse-item">
@@ -224,7 +227,7 @@
                                         </ul>
                                     </div>
                                 </div>-->
-                                <div class="feature-widget widget" style="margin-top: 150px;">
+                                <!--<div class="feature-widget widget" style="margin-top: 150px;">
                                     <div class="title-widget">recent posts</div>
                                     <div class="content-widget">
                                         <div class="media feature-item">
@@ -266,7 +269,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                                 <!--<div class="popular-widget widget">
                                     <div class="title-widget">popular tags</div>
                                     <div class="content-widget">

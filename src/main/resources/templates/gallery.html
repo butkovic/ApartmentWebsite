@@ -3,7 +3,7 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Apartment WebSite</title>
+    <title th:text="#{page.title}">Apartment WebSite</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -64,12 +64,15 @@
 
                             <li><a href="/blog" class="main-menu" th:text="#{header.navbar.tab3.blog}"></a></li>
 
+                            <!--
                             <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/gallery" class="link-page" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
                                     <li><a href="/about-us" class="link-page" th:text="#{header.navbar.tab4.2.about.us}"></a></li>
                                 </ul>
                             </li>
+                            -->
+                            <li><a href="/gallery" class="main-menu" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
                             <li><a href="/contact" class="main-menu" th:text="#{header.navbar.tab5.contact}"></a></li>
                         </ul>
                     </nav>
@@ -97,8 +100,10 @@
                     <div class="container margin-top">
 
                         <div class="group-title padding-top">
+                            <!--
                             <div id="gallery-title" class="title" th:text="#{gallery.section.title}"></div>
                             <div class="des" th:text="#{gallery.section.description}" ></div>
+                            -->
                         </div>
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/beach.jpg" alt="" class="img-responsive" style="width:100%"/></div>

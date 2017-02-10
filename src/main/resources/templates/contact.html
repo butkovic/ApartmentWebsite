@@ -3,8 +3,8 @@
       xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
-<head><title>Sunhouse | Contact Us</title>
-    <title>Apartment WebSite</title>
+<head>
+    <title th:text="#{page.title}">Apartment WebSite</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -71,12 +71,15 @@
 
                             <li><a href="/blog" class="main-menu" th:text="#{header.navbar.tab3.blog}"></a></li>
 
+                            <!--
                             <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span th:text="#{header.navbar.tab4.page}"></span><span class="fa fa-angle-down icons-dropdown"></span></a>
                                 <ul class="dropdown-menu dropdown-menu-1">
                                     <li><a href="/gallery" class="link-page" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
                                     <li><a href="/about-us" class="link-page" th:text="#{header.navbar.tab4.2.about.us}"></a></li>
                                 </ul>
                             </li>
+                            -->
+                            <li><a href="/gallery" class="main-menu" th:text="#{header.navbar.tab4.1.gallery}"></a></li>
                             <li><a href="/contact" class="main-menu" th:text="#{header.navbar.tab5.contact}"></a></li>
                         </ul>
                     </nav>
@@ -145,7 +148,7 @@
 
                                         <p class="text" th:text="#{contact.mail.section.information}">Subcribe to receive new properties with good price.</p>
 
-                                        <form><input type="text" placeholder="Your Name" class="contact-form"/><input type="email" placeholder="Your Email" class="contact-form"/><textarea placeholder="Your Message" class="contact-form"></textarea><a href="#" class="btn btn-transparent white">send message</a></form>
+                                        <!--<form><input type="text" placeholder="Your Name" class="contact-form"/><input type="email" placeholder="Your Email" class="contact-form"/><textarea placeholder="Your Message" class="contact-form"></textarea><a href="#" class="btn btn-transparent white">send message</a></form>-->
                                     </div>
                                 </div>
                                 <div class="contact-us-wrapper"><img src="../../picture/basic/owners.jpg" alt="" class="img-responsive"/></div>

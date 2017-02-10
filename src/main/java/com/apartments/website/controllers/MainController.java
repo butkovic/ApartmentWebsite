@@ -18,12 +18,16 @@ public class MainController {
     public static final int small_apartment_2nd_floor = 4;
     public static final int house_marija = 5;
 
-
+/*
     @RequestMapping(method = RequestMethod.GET)
     public String getIndexView(){
         return "coming-soon";
     }
-
+*/
+    @RequestMapping(method = RequestMethod.GET)
+    public String getIndexView() {
+        return "index";
+    }
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String getHomeView(){
         return "index";
@@ -48,28 +52,27 @@ public class MainController {
     public String getBlogView(){
         return "blog";
     }
-
+/*
     @RequestMapping(value = "/blog-detail", method = RequestMethod.GET)
     public String getBlogDetailView(){return "blog-detail"; }
+
 
     @RequestMapping(value = "/about-us", method = RequestMethod.GET)
     public String getAboutUsView(){
         return "about-us";
     }
-
+*/
     @RequestMapping(value = "/gallery", method = RequestMethod.GET)
     public String getGalleryView(){
         return "gallery";
     }
-
+/*
     @RequestMapping(value = "/gallery-atraction", method = RequestMethod.GET)
     public String getGalleryAtractionView(){
         return "gallery-atraction";
     }
+*/
 
-    /*@RequestMapping(value = "/big_apartment", method = RequestMethod.GET)
-    public String getPropertyDetail1View(){ return "big_apartment"; }
-    */
     @RequestMapping(value = "/big_apartment", method = RequestMethod.GET)
     public String getRoomDetail1View(Model model) {
         model.addAttribute("room", big_apartment);
