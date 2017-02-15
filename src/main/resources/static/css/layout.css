@@ -440,12 +440,13 @@ h5 {
 }
 
 .contact-us {
-    min-height: 650px;
-    background-image: url("../picture/Medulin2.jpg");
+    min-height: 850px;
+    background-image: url("../picture/basic/house.jpg");
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center;
-    position: relative
+    position: relative;
+    transparent: 50%
 }
 
 .banner-come-in {
