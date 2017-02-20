@@ -24,6 +24,7 @@ public class MainController {
         return "coming-soon";
     }
 */
+
     @RequestMapping(method = RequestMethod.GET)
     public String getIndexView() {
         return "index";
