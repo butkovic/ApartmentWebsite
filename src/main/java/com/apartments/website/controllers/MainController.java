@@ -24,11 +24,11 @@ public class MainController {
         return "coming-soon";
     }
 */
-
     @RequestMapping(method = RequestMethod.GET)
     public String getIndexView() {
         return "index";
     }
+
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String getHomeView(){
         return "index";
