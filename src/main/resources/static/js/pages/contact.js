@@ -252,9 +252,15 @@
             lat: -33.9,
             lng: 151.151
         });*/
+        /*
+        lat: 44.82,
+        lng: 13.925
+        */
+
+
         map.setCenter({
-                    lat: 44.82,
-                    lng: 13.925
+                    lat: xcord,
+                    lng: ycord
                 });
 
 

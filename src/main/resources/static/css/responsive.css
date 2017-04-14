@@ -431,7 +431,8 @@
     }
 
     .about-house-section .about-house-image {
-        width: 250px
+        width: 250px;
+        display: none;
     }
 
     .about-house-section .about-house-content {
@@ -1252,7 +1253,7 @@
     }
 
     .about-house-section .about-house-image {
-        display: block;
+        display: none;
         width: 100%
     }
 
