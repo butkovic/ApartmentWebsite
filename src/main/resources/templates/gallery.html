@@ -4,6 +4,7 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="#{page.title}">Apartment WebSite</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../picture/favicon.ico" />
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -52,7 +53,8 @@
             <div class="container">
                 <div class="header-main-wrapper">
                     <div class="navbar-header">
-                        <div class="logo logo-white pull-left"><a href="index.html" class="header-logo"><img src="../../picture/logo.png" alt=""/></a></div>
+                        <div class="logo logo-black pull-left"><a href="index.html" class="header-logo"><img src="../../picture/logo.png" alt=""/></a></div>
+                        <div class="logo logo-white pull-left"><a href="index.html" class="header-logo"><img src="../../images/logo-2.png" alt=""/></a></div>
                         <button type="button" data-toggle="collapse" data-target=".navigation" class="navbar-toggle btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <nav class="navigation collapse navbar-collapse pull-right">
@@ -105,15 +107,7 @@
                             <div class="des" th:text="#{gallery.section.description}" ></div>
                             -->
                         </div>
-                        <div class="sunhouse-item-gallery">
-                            <div class="wrapper-image"><img src="../../picture/basic/beach1.JPG" alt="" class="img-responsive" style="width:100%"/></div>
-                            <div class="wrapper-content">
-                                <div class="about-house">
-                                    <p class="title" th:text="#{gallery.picture2.title}"></p>
-                                    <p class="text" th:text="#{gallery.picture2.text}"></p>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/beach2.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
@@ -132,15 +126,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sunhouse-item-gallery">
-                            <div class="wrapper-image"><img src="../../picture/basic/levan.jpg" alt="" class="img-responsive" style="width:100%"/></div>
-                            <div class="wrapper-content">
-                                <div class="about-house">
-                                    <p class="title" th:text="#{gallery.picture5.title}"></p>
-                                    <p class="text" th:text="#{gallery.picture5.text}"></p>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/basic/owners.jpg" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
@@ -158,15 +144,7 @@
                             </div>
                         </div>
 
-                        <!-- NEW PICTURE -->
-                        <div class="sunhouse-item-gallery">
-                            <div class="wrapper-image"><img src="../../picture/gallery/beach001.png" alt="" class="img-responsive" style="width:100%"/></div>
-                            <div class="wrapper-content">
-                                <div class="about-house">
-                                    <p class="title" th:text="#{gallery.picture8.title}"></p>
-                                    <p class="text" th:text="#{gallery.picture8.text}"></p></div>
-                            </div>
-                        </div>
+
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/gallery/beach002.png" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
@@ -183,14 +161,7 @@
                                     <p class="text" th:text="#{gallery.picture11.text}"></p></div>
                             </div>
                         </div>
-                        <div class="sunhouse-item-gallery">
-                            <div class="wrapper-image"><img src="../../picture/gallery/detalj_vrta.png" alt="" class="img-responsive" style="width:100%"/></div>
-                            <div class="wrapper-content">
-                                <div class="about-house">
-                                    <p class="title" th:text="#{gallery.picture12.title}"></p>
-                                    <p class="text" th:text="#{gallery.picture12.text}"></p></div>
-                            </div>
-                        </div>
+
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/gallery/garden.png" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
@@ -207,22 +178,7 @@
                                     <p class="text" th:text="#{gallery.picture14.text}"></p></div>
                             </div>
                         </div>
-                        <div class="sunhouse-item-gallery">
-                            <div class="wrapper-image"><img src="../../picture/gallery/premantura_06.jpg" alt="" class="img-responsive" style="width:100%"/></div>
-                            <div class="wrapper-content">
-                                <div class="about-house">
-                                    <p class="title" th:text="#{gallery.picture15.title}"></p>
-                                    <p class="text" th:text="#{gallery.picture15.text}"></p></div>
-                            </div>
-                        </div>
-                        <div class="sunhouse-item-gallery">
-                            <div class="wrapper-image"><img src="../../picture/gallery/sea.png" alt="" class="img-responsive" style="width:100%"/></div>
-                            <div class="wrapper-content">
-                                <div class="about-house">
-                                    <p class="title" th:text="#{gallery.picture16.title}"></p>
-                                    <p class="text" th:text="#{gallery.picture16.text}"></p></div>
-                            </div>
-                        </div>
+
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/gallery/seagull.png" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">
@@ -247,14 +203,7 @@
                                     <p class="text" th:text="#{gallery.picture19.text}"></p></div>
                             </div>
                         </div>
-                        <div class="sunhouse-item-gallery">
-                            <div class="wrapper-image"><img src="../../picture/gallery/sights_house.png" alt="" class="img-responsive" style="width:100%"/></div>
-                            <div class="wrapper-content">
-                                <div class="about-house">
-                                    <p class="title" th:text="#{gallery.picture20.title}"></p>
-                                    <p class="text" th:text="#{gallery.picture20.text}"></p></div>
-                            </div>
-                        </div>
+
                         <div class="sunhouse-item-gallery">
                             <div class="wrapper-image"><img src="../../picture/gallery/sunset.JPG" alt="" class="img-responsive" style="width:100%"/></div>
                             <div class="wrapper-content">

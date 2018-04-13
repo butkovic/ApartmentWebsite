@@ -29,6 +29,11 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public String getHomeView2(){
+        return "index";
+    }
+
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String getHomeView(){
         return "index";

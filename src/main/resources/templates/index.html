@@ -4,9 +4,14 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <title th:text="#{page.title}">Apartment WebSite</title>
+    <!--<link rel="icon" type="image/png" href="../../picture/icon1.png">-->
+    <link rel="shortcut icon" type="image/x-icon" href="../../picture/favicon.ico" />
+
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Apartments Ciceran Medulin official site"/>
+    <meta name="keywords" content="apartment,apartments,ciceran,summer,medulin,pula,istra,croatia,hrvatska,apartmani,vacation,fun"/>
     <!-- Font css-->
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,700,900"/>
     <link type="text/css" rel="stylesheet" href="../../font/font-icon/font-awesome-4.4.0/css/font-awesome.css" th:href="@{/font/font-icon/font-awesome-4.4.0/css/font-awesome.css}"/>
@@ -96,15 +101,15 @@
                             <div class="about-house-wrapper">
 
                                 <!--<div class="about-house-image"><img src="../../picture/basic/house.jpg" alt="" class="img-responsive"/></div>-->
-                                <div class="about-house-content-2"><h2 class="title" th:text="#{homepage.section1.title}"></h2>
+                                <div class="about-house-content-2" style="padding-left: 0px"><h2 class="title" th:text="#{homepage.section1.title}"></h2>
 
                                     <p class="text" th:text="#{homepage.section1.text1}"></p>
 
-                                    <p class="text" th:text="#{homepage.section1.text2}"></p>
+                                    <!--<p class="text" th:text="#{homepage.section1.text2}"></p>
 
                                     <p class="text" th:text="#{homepage.section1.text3}"></p>
 
-                                    <p class="text" th:text="#{homepage.section1.text4}"></p>
+                                    <p class="text" th:text="#{homepage.section1.text4}"></p>-->
 
                                 </div>
                             </div>
@@ -302,6 +307,25 @@
                                         <div class="sub-price" th:text="#{homepage.banner2.duration}">Per month</div>
                                     </div>
                                     <a href="house_marija" class="btn btn-transparent white" th:text="#{homepage.banner2.button}">detail</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section scroll-to">
+                    <div class="about-house-section padding-top padding-bottom">
+                        <div class="container">
+                            <div class="about-house-wrapper">
+
+                                <!--<div class="about-house-image"><img src="../../picture/basic/house.jpg" alt="" class="img-responsive"/></div>-->
+                                <div class="about-house-content-2" style="padding-left: 0px"><h2 class="title" th:text="#{homepage.section1.title2}"></h2>
+
+                                    <p class="text" th:text="#{homepage.section1.text2}"></p>
+
+                                    <p class="text" th:text="#{homepage.section1.text3}"></p>
+
+                                    <p class="text" th:text="#{homepage.section1.text4}"></p>
+
+                                </div>
                             </div>
                         </div>
                     </div>
