@@ -150,7 +150,12 @@
                                         <div class="type"><i class="fa fa-align-justify"></i><span th:text="#{room.rent}">sale</span></div>
                                     </div>
                                     <div class="info">
-                                        <div class="price"><i class="fa fa-money"></i><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.min'}">4,235,400</span><span>&euro; - </span><span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.max'}">4,235,400</span><span>&euro;</span> / <span th:text="#{'homepage.section2.room'+${room}+'.duration'}"></span></div>
+                                        <table>
+                                            <tr><div class="price"><td><i class="fa fa-money"></i></td><td><span class="price-num" style="margin-right: 5px" th:text="#{'homepage.section2.room'+${room}+'.price.date1'}">4,235,400</span>  </td><td>  <span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.min'}">4,235,400</span>€ / </td><td><span th:text="#{'homepage.section2.room'+${room}+'.duration'}"></span></td></div></tr>
+                                            <tr><div class="price"><td><i class="fa fa-money"></i></td><td><span class="price-num" style="margin-right: 5px" th:text="#{'homepage.section2.room'+${room}+'.price.date2'}">4,235,400</span>  </td><td>  <span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price2'}">4,235,400</span>€ / </td><td><span th:text="#{'homepage.section2.room'+${room}+'.duration'}"></span></td></div></tr>
+                                            <tr><div class="price"><td><i class="fa fa-money"></i></td><td><span class="price-num" style="margin-right: 5px" th:text="#{'homepage.section2.room'+${room}+'.price.date3'}">4,235,400</span>  </td><td>  <span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price.max'}">4,235,400</span>€ / </td><td><span th:text="#{'homepage.section2.room'+${room}+'.duration'}"></span></td></div></tr>
+                                            <tr><div class="price"><td><i class="fa fa-money"></i></td><td><span class="price-num" style="margin-right: 5px" th:text="#{'homepage.section2.room'+${room}+'.price.date4'}">4,235,400</span>  </td><td>  <span class="price-num" th:text="#{'homepage.section2.room'+${room}+'.price2'}">4,235,400</span>€ / </td><td><span th:text="#{'homepage.section2.room'+${room}+'.duration'}"></span></td></div></tr>
+                                        </table>
                                     </div>
                                 </div>
                                 <div class="col-md-12 title" th:text="#{room.image.gallery}">image gallery</div>
